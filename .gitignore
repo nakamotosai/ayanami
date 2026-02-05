@@ -1,0 +1,19 @@
+# OpenClaw workspace sync (safe defaults)
+
+# OS / editor
+.DS_Store
+*.swp
+*.tmp
+
+# Logs / sessions (do not sync)
+**/sessions/
+**/*.jsonl
+
+# Backups & archives
+*.tar.gz
+
+# Credentials / secrets (defense in depth)
+**/credentials/
+**/.env
+**/*.key
+**/*token*
