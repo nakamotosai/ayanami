@@ -85,6 +85,8 @@
 - [ ] （待捕获）
 
 ## ✅ Done（已完成，保留最近 20 条）
+- [x] 为 LINE 女儿专用 bot 创建独立工作区并绑定指定用户，彻底与主工作区解耦。（2026-02-06）
+- [x] 调整心跳逻辑：长时间不互动后仅触发一次 heartbeat，避免连续重复。（2026-02-06）
 - [x] 创建并加载 xhs-jewelry-copywriter 技能：珠宝产品信息自动改写为小红书标题+正文+标签，含参数解析与单位校验。（2026-02-06）
 
 - [x] Installed Context7 MCP server, created context7 user/dirs, systemd service, env placeholder `/etc/context7/context7.env`, and exposed port 3000; remaining manual step: set `CONTEXT7_API_KEY` before restarting. (2026-02-06)
