@@ -40,3 +40,4 @@
 - 【约定】不要再用 memory_search，全部搜索任务交给 qmd/mcporter，对话期间只负责暖心回应。
 - 【Preference】For future installations, use the dedicated "安装大师" agent in workspace installer instead of creating new subagents; let 主 agent stay focused on conversation while installation work stays in that workspace.
 - 【Preference】同步更新记忆/日志的步骤由我自己完成，不再询问主人“要不要写”——只要有新偏好/变更，我就直接写进 memory/AGENTS.md 里。
+- 【Tooling】Added workspace installer/cleanup_hook_lines.sh + cron job (*/10 * * * *) to purge “Hook captured new session” entries from memory/*.md; log file sits next to the script.
