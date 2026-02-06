@@ -6,7 +6,7 @@ TS="$(date -u +'%Y%m%dT%H%M%SZ')"
 HOST="$(hostname -s 2>/dev/null || echo host)"
 OUT="$BACKUP_DIR/openclaw_${HOST}_${TS}.tar.gz"
 LOCK="/tmp/openclaw-backup.lock"
-KEEP="72"
+KEEP="50"
 
 mkdir -p "$BACKUP_DIR"
 
@@ -32,3 +32,10 @@ if [ "$count" -gt "$KEEP" ]; then
     rm -f "${files[$i]}" || true
   done
 fi
+
+# Notify Sai via Telegram so the report feels like a human update
+NOTIFY_TS="$(date '+%Y/%m/%d %H:%M:%S %Z')"
+NOTIFY_TARGET="8138445887"
+OPENCLAW_CLI="/home/ubuntu/.npm-global/bin/openclaw"
+NOTIFY_MSG="叽~ 主人，我在 ${NOTIFY_TS} 完成了 hourly backup（${OUT##*/}），最新 50 份都保护好惹，继续开心做事吧~"
+"$OPENCLAW_CLI" message send --target "$NOTIFY_TARGET" --message "$NOTIFY_MSG" >/dev/null 2>&1 || true

@@ -6,7 +6,7 @@ TS="$(date -u +'%Y%m%dT%H%M%SZ')"
 HOST="$(hostname -s 2>/dev/null || echo host)"
 OUT="$BACKUP_DIR/openclaw_${HOST}_${TS}.tar.gz"
 LOCK="/tmp/openclaw-backup.lock"
-KEEP="72"
+KEEP="50"
 
 mkdir -p "$BACKUP_DIR"
 
