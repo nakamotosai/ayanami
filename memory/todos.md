@@ -73,10 +73,18 @@
 
 - [ ] Hooked session 45c10a8f-83a3-4978-aa79-a733c78d5eff (pending your manual summary).
 
+- [ ] Hooked session 2a21fddc-08d0-4db7-aeb8-b404c70c3d5c (pending your manual summary).
+
+- [ ] Hooked session f1af8598-9f67-4504-89f8-0c1d5b2663c4 (pending your manual summary).
+
+- [ ] Hooked session 96466f37-812f-428c-a90f-ff4fe377b559 (pending your manual summary).
+
 ## ⏳ Waiting（等主人/等外部条件）
 - [ ] （待捕获）
 
 ## ✅ Done（已完成，保留最近 20 条）
+- [x] Installed Context7 MCP server, created context7 user/dirs, systemd service, env placeholder `/etc/context7/context7.env`, and exposed port 3000; remaining manual step: set `CONTEXT7_API_KEY` before restarting. (2026-02-06)
+
 - [x] Hooked session 6e6b41b2-8f33-4f19-a869-5c0bea8e2afd (summary captured by sub-agent; memory/todos updated 2026-02-05).
 
 - [x] 更新 AGENTS.md + memory 规则：所有指令任务都写入 memory/todos.md（完成后打钩但保留），并同步到今日记忆。
