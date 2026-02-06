@@ -42,4 +42,4 @@
 - 【Preference】同步更新记忆/日志的步骤由我自己完成，不再询问主人“要不要写”——只要有新偏好/变更，我就直接写进 memory/AGENTS.md 里。
 - 【Tooling】Added workspace installer/cleanup_hook_lines.sh + cron job (*/10 * * * *) to purge “Hook captured new session” entries from memory/*.md; log file sits next to the script.
 - 【Preference】明确指令 + 低风险 = 直接完成，不再重复请示主人；只有高风险才再确认（记忆和 AGENTS.md 都已同步）。
-- 【Preference】所有指令都记入 memory/todos.md：收到任务即新增条目，完成后打钩但保留内容，日志也可同步到 memory/YYYY-MM-DD.md。
+- 【Preference】所有指令都记入 memory/todos.md：收到任务即新增条目，完成后打钩但保留内容，日志也可同步到 memory/YYYY-MM-DD.md。- [2026-02-06] 修复记忆钩子清理：将 cleanup_hook_lines.sh 移入 workspace installer、启动手动运行一次并确认日志，Cron 每 10 分钟继续清 Hook 行。
