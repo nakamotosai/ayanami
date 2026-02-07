@@ -28,3 +28,6 @@ workspace\ Learner/
 workspace\ Moltbook/
 workspace\ Rednoter/
 workspace\ installer/
+
+# Ignore virtual environment
+.venv/
