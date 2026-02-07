@@ -1,0 +1,11 @@
+🌸 Learner Docs 更新摘要
+
+时间：2026-02-08 02:33:09
+共 30 条页面被更新，覆盖 automation、channels、CLI 等模块。
+
+重点片段：
+- docs.openclaw.ai_automation_auth-monitoring.html (auth-monitoring)
+- docs.openclaw.ai_automation_cron-jobs.html (cron-jobs)
+- docs.openclaw.ai_automation_cron-vs-heartbeat.html (cron-vs-heartbeat)
+
+详细摘要请查看 learner-docs/references/last_summary.md

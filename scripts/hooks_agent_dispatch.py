@@ -3,29 +3,23 @@
 
 Usage:
   hooks_agent_dispatch.py --task "..." --tier hard|medium|free [--channel last|telegram|discord|line] [--to ID]
-
-Reads hooks token + gateway port from /home/ubuntu/.openclaw/openclaw.json and POSTs to /hooks/agent.
 """
 import argparse
 import json
-import re
 import urllib.request
-from pathlib import Path
 
-CFG_PATH = Path("/home/ubuntu/.openclaw/openclaw.json")
+from secrets_loader import (
+    resolve_gateway_port,
+    resolve_hook_source_token,
+    resolve_hook_token,
+    resolve_hooks_path,
+)
 
 TIERS = {
     "hard": "openai-codex/gpt-5.2-codex",
     "medium": "openai-codex/gpt-5.1-codex-mini",
     "free": "qwen-portal/coder-model",
 }
-
-
-def load_cfg():
-    text = CFG_PATH.read_text(encoding="utf-8")
-    # Remove trailing commas before ] or }
-    cleaned = re.sub(r",\s*([\]}])", r"\1", text)
-    return json.loads(cleaned)
 
 
 def main() -> int:
@@ -38,18 +32,20 @@ def main() -> int:
     ap.add_argument("--wake", default="now", choices=["now", "next-heartbeat"])
     ap.add_argument("--thinking", default="", help="optional thinking level")
     ap.add_argument("--timeout", type=int, default=0, help="timeout seconds")
+    ap.add_argument("--source", default="", help="source validation token")
     args = ap.parse_args()
 
-    cfg = load_cfg()
-    hooks = cfg.get("hooks", {})
-    gateway = cfg.get("gateway", {})
-    token = hooks.get("token", "").strip()
+    token = resolve_hook_token()
     if not token:
-        raise SystemExit("hooks.token missing in openclaw.json")
-    base_path = hooks.get("path", "/hooks").strip() or "/hooks"
-    if not base_path.startswith("/"):
-        base_path = "/" + base_path
-    port = int(gateway.get("port", 18789))
+        raise SystemExit("hooks.token missing (openclaw.json or credentials)")
+
+    source_token = resolve_hook_source_token()
+    if source_token:
+        if not args.source or args.source != source_token:
+            raise SystemExit("invalid hook source token")
+
+    port = resolve_gateway_port()
+    base_path = resolve_hooks_path()
 
     payload = {
         "message": args.task,
@@ -70,6 +66,8 @@ def main() -> int:
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Content-Type", "application/json")
     req.add_header("Authorization", f"Bearer {token}")
+    if args.source:
+        req.add_header("X-Openclaw-Source", args.source)
     with urllib.request.urlopen(req, timeout=15) as resp:
         body = resp.read().decode("utf-8", errors="replace")
         print(body)

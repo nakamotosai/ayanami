@@ -45,7 +45,8 @@ def main() -> int:
         "task": args.task,
         "template": (
             "请作为子 agent 执行任务：" + args.task + "\n"
-            "要求：仅专注任务；输出结果 + 证据；结束后停止子 agent。"
+            "要求：仅专注任务；输出结果 + 证据；结束后停止子 agent；"
+            "创建时请带 runTimeoutSeconds=180。"
         ),
     }
 

@@ -58,3 +58,9 @@
 - 已接入：qmd（memory 查询）与 searxng（联网搜索）。
 - 快速查看：cd /home/ubuntu/.openclaw/workspace && mcporter list。
 - 详细用法：skills/mcporter-mcp/SKILL.md。
+
+## 密钥与 Hook
+- 统一密钥位置：`/home/ubuntu/.openclaw/credentials/secrets.json`、`secrets.env`，以及运行用 `~/.openclaw/.env`。
+- 同步脚本：`/home/ubuntu/.openclaw/workspace/scripts/secrets_sync.py --export|--apply`。
+- Hook 调用需来源校验：`scripts/hooks_agent_dispatch.py` / `scripts/hooks_wake.py` 需要 `--source`（值来自 `HOOKS_SOURCE_TOKEN`）。
+

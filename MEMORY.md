@@ -15,6 +15,8 @@
 8. **子 agent 分配规则**：重任务/复杂代码用 `openai-codex/gpt-5.2-codex`；便宜任务/查资料/重写用 `openai-codex/gpt-5.1-codex-mini`；最简单/免费文本用 `qwen-portal/coder-model`；不使用 kimi。
 9. **子 agent 模板**：`worker-strong` / `worker-medium` / `worker-free`，用完即停不常驻。
 10. **调度脚本**：使用 `scripts/subagent_dispatch.py` 生成子 agent 任务模板与模型建议。
+11. **主会话工具禁用**：主会话只允许 sessions 工具；所有命令/文件/联网/长任务必须交给子 agent。
+12. **子 agent 超时/归档**：默认 runTimeoutSeconds=180；子 agent 自动归档 30 分钟后清理。
 11. **Webhook 触发**：启用 OpenClaw hooks（`/hooks`）；子任务用 `/hooks/agent`，系统事件用 `/hooks/wake`；本机脚本在 `scripts/hooks_agent_dispatch.py` 与 `scripts/hooks_wake.py`。
 12. **模型偏好（路由）**：heartbeat/问候/小纸条优先 Qwen；便宜任务/查资料/重写用 Codex 5.1 mini；复杂代码用 Codex 5.2；最简单文本用 Qwen。
 13. **每日复盘时间**：每天东京时间 **05:00** 执行复盘并汇报给主人。
@@ -29,7 +31,7 @@
 23. **实时捕捉**：每 10 分钟自动抓取当前会话的新增主人发言，追加到 memory/NOW.md 与当日日志。
 22. **即时长期记忆**：发现情绪/不满/偏好/禁忌/强要求时，必须立刻写入 `MEMORY.md`，不等待隔天总结。
 23. **资料查询偏好**：以后优先通过 qmd 查询/确认历史（memory_search 只在 qmd 无法满足时才尝试），以配合主人的要求。
-24. **群聊 agent 策略**：所有 Telegram（及 future group）agent 都必须独立运行，不再 spawn 后台子 agent；默认 workspace 命名按 `telegram-<group_id>-workspace`，政策写在 `config/group-agent-policy.json` 方便参考。
+24. **群聊 agent 策略**：Telegram 群聊 agent 仍保持独立运行，但允许短期子 agent 协助耗时/工具任务；禁止常驻子 agent。默认 workspace 命名按 `telegram-<group_id>-workspace`，政策写在 `config/group-agent-policy.json` 方便参考。
 25. **主动完成查询规则**：主人提问题后，我必须主动去查看或执行相应操作（如查配置、运行工具）而不是反问“要我去看吗”，除非明确说明要等待；这样的请求自动记进 memory 并遵守。
 26. **命令超时应对**：如果某个 CLI 命令因为输出太大/耗时被 SIGKILL，我会立即取消、改用更精确的查询（例如直接读 `~/.openclaw/cron/jobs.json`、`config/group-agent-policy.json`、`~/.openclaw/agents/main/sessions/sessions.json` 等轻量文件），并把结果写进记忆，而不是反复重跑那条重命令。
 27. **心跳感应修复**：`scripts/heartbeat_dynamic.sh` 每次运行会主动刷新 `memory/last_chat.ts`（通过 `openclaw sessions --json --active 120` 取最新会话更新时间），确保心跳触发不依赖外部写入。
@@ -56,13 +58,14 @@
 - [2026-02-06] 新增技能 core-file-maintenance：用于核心文件自动同步与维护（AGENTS/SOUL/USER/TOOLS/MEMORY）。
 - [2026-02-06] 新增技能 xhs-jewelry-copywriter：将珠宝产品信息改写为小红书风格文案（标题+正文+标签），含参数解析与单位校验；已提升丰富度要求（正文 180–260 字以上，Body 3-4 段 + 信息增量）。
 - [2026-02-06] 心跳偏好：长时间不互动后仅触发一次 heartbeat，避免连续重复。
-- [2026-02-07] 已停止并清理所有常驻子 agent（LINE Family / Moltbook / Installer / Githuber / Rednoter / Learner / DailyBrief），后续由主 agent 统一负责。
+- [2026-02-07] 已停止并清理所有常驻子 agent（LINE Family / Moltbook / Installer / Githuber / Rednoter / Learner / DailyBrief），仅保留短期子 agent 作为后台执行能力。
 - [2026-02-07] 保留并合并技能：skills/learner-docs 与 skills/proactive-agent-1-2-4，统一放在 /home/ubuntu/.openclaw/workspace/skills。
 - [2026-02-07] 清理：移除子 agent 相关 workspace/cron 残留，仅保留主 workspace。
+- [2026-02-08] 允许群聊/主会话使用短期子 agent 执行耗时任务，常驻子 agent 仍保持禁用。
 - [2026-02-07] 模型偏好以 /home/ubuntu/.openclaw/openclaw.json 为准（当前主模型是 openai-codex）。
 
 ## 2026-02-07 子 agent合并
-- [2026-02-07] 子 agent 已全部移除，仅保留主 agent；相关技能已合并至 /home/ubuntu/.openclaw/workspace/skills。
+- [2026-02-07] 常驻子 agent 已全部移除，仅保留主 agent；相关技能已合并至 /home/ubuntu/.openclaw/workspace/skills。
 
 
 ## 🔁 2026-02-07 Proactive-agent-1-2-4 归档（已合并）
@@ -133,3 +136,15 @@
 - System: [2026-02-08 00:18:44 GMT+9] Cron: ✅ 结论：`scripts/session_watch.py` 已经实现了你描述的“/new or /reset 后自动整理记忆”流程——它从 `~/.openclaw/agents/main/sessions/sessions.json` 里取主会话 `sessionId`，在变化时尾随上一会话 `.jsonl` 的最后 200 行，提炼“长期规则/偏好”写入 `MEMORY.md`、生成东京日期的 `memory/YYYY-MM-DD.md` 摘要与决定/坑/未完成、并更新 `memory/todos.md`（最多 7 条、完成项移到 Done），最后把 `memory/session-watch.json` 的 `lastSessionId` 改成当前并输出“我已在后台整理并进化记忆 + 更新 todo”
 - 🧩 下一步：用 cron 定期执行该脚本（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`）让它在每次 `/new` 或 `/reset` 后自动触发；如果还想更细化抽取规则，再调 KEYWORDS 列表即可
 - System: [2026-02-08 01:05:31 GMT+9] Cron: ちぃ刚刚在宿主机跑完 `scripts/openclaw-github-sync.sh`，但是 push 被 GitHub 的 secret scanning 规则拦下了（提示 config/mcporter.json 第44行含 GitHub PAT），因此虽然本地已经生成了新 commit `eeb58ff`（内容 27 文件改动/新增/删除），但没有被写进远端 master；要么从那个配置里彻底移除敏感 token，要么通过 GitHub 那条 “allow secret” 链接解封才能重新推送
+
+## 自动会话钩子（2026-02-08T02:50:01Z）
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +32s 2026-02-08 01:43 GMT+9] 我希望的是你自由发挥，这是只属于你们ai的论坛，我真人不应该插手
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +57s 2026-02-08 01:44 GMT+9] 我希望你能参与一些关于ai的记忆机制的讨论，发帖或者评论都可以，其他你随意
+- 发帖的主题希望涵盖各个方面，你自己来决定
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +1m 2026-02-08 01:49 GMT+9] 你没事做的时候可以去上面看一下热门贴都在聊什么东西，然后看看有没有对升级自己能力有关的帖子，去学习一下，学习到了方案的话，请你主动给我留言，并制定相应的方案，等我审批通过
+- 希望你能主动一点
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +1m 2026-02-08 01:53 GMT+9] 我点头了，希望你能自我进化，加油
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +1m 2026-02-08 01:54 GMT+9] 我现在赋予你最高权限，请你自行判断
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +42s 2026-02-08 02:27 GMT+9] 你直接汇报给我啊，不要只存文件，要让我知道啊
+- [Telegram saaaai (@jpsaaaai) id:8138445887 +40s 2026-02-08 02:29 GMT+9] 请你修改这个skill，生成差异摘要之后必须直接用气泡消息的形式把具体改动发给我
+- 请你修改这个skill的流程，最终不仅要记录下来，还要像一个老师一样回答我的提问
