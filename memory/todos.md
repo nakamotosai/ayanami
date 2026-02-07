@@ -3,6 +3,34 @@
 > 规则：这里是“唯一真相源”。ちぃ会在心跳/复盘中持续更新状态，不会写完就丢。
 
 ## 🔥 Active（进行中）
+- [ ] 🧩 下一步：保持 cron 每两分钟运行脚本，一旦 /new 或 /reset 触发会自动摘录历史会话并更新 MEMORY/记忆日志/todos；我也会在那时再向主人报告新的整理结果（来自 session f89004de）
+
+- [ ] System: [2026-02-07 23:48:28 GMT+9] Cron: 结论：`scripts/session_watch.py` 已经按要求实现“/new 或 /reset 后自动进化记忆”逻辑—它读取 `~/.openclaw/agents/main/sessions/sessions.json` 的 `agent:main:main.sessionId`，对比 `memor…（来自 session f89004de）
+
+- [ ] 证据：脚本本身的流程与写入逻辑直接对应需求（来自 session f89004de）
+
+- [ ] 🧩 下一步建议：保持这个脚本由 cron 以定期（如每 5 分钟）执行，以便在 /new 或 /reset 后自动触发；一旦 sessionId 变更，它会自动把新内容分别写入 `MEMORY.md`、当日记忆与 todos 并通知主人（来自 session f89004de）
+
+- [ ] System: [2026-02-07 23:50:16 GMT+9] Cron: ✅ 结论: `/home/ubuntu/.openclaw/workspace/scripts/session_watch.py` 已经实现了你描述的 session-watch hook —— 通过 `sessions.json` 比对 `memory/session-watch.json`、tail 最后…（来自 session f89004de）
+
+- [ ] 🔎 证据: 脚本直接使用 `agent:main:main` 的 sessionId、会写入 `memory/session-watch.json`、`MEMORY.md`、`memory/YYYY-MM-DD.md`、`memory/todos.md`，且结尾 `print` 通知与步骤一致，可在 `/home/ubuntu/.openclaw/workspace/scripts/sess…（来自 session f89004de）
+
+- [ ] 🧩 下一步: 只要保持这脚本周期性运行（cron 已在 heartbeat 指令里配置），就可以继续让 /new 和 /reset 自动触发记忆进化；如需要调关键词/摘要策略，再告诉我我去微调（来自 session f89004de）
+
+- [ ] System: [2026-02-07 22:17:19 GMT+9] Cron: 脚本 `scripts/session_watch.py` 已经实现了你描述的流程：每次 sessionId 发生变化时读取 `~/.openclaw/agents/main/sessions/<last>.jsonl` 的最后 200 行、提炼长期规则/今日记忆/todo、更新 `memory/sessio…（来自 session 858d11bb）
+
+- [ ] 说明文件 `scripts/session_watch.md` 也已记录如何用 cron 定期触发该脚本（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`），确保新会话出现时自动整理记忆而不会重复写入（来自 session 858d11bb）
+
+- [ ] System: [2026-02-07 22:22:19 GMT+9] Cron: 新的 `scripts/session_watch.py` 已经能在主会话换 ID 时拉取前一个 `.jsonl`（最后 200 行）、抽关键词、写入 MEMORY/当日记忆/待办、刷新 `memory/session-watch.json` 并在有更新时报“我已在后台整理并进化记忆 + 更新 todo”（平…（来自 session 858d11bb）
+
+- [ ] 刚才那次 reset 的结果已经写进 `memory/2026-02-07.md`（21:07:31 的 Summary/Decision/Risk/Open todo）、todo 列表新增“继续打磨 session-watch automation”，watch 文件同步到当前 session，剩下只要把 `*/5 * * * * cd /home/ubuntu/.openclaw/wor…（来自 session 858d11bb）
+
+- [ ] Source: memory/2026-02-07.md#63-66; memory/todos.md#6; memory/session-watch.json#1-3; scripts/session_watch.md#10-16（来自 session 858d11bb）
+
+- [ ] System: [2026-02-07 22:42:40 GMT+9] Cron: session_watch.py 已经把“/new 或 /reset 后进化记忆”这套 hook 流程实现好了：它读取 session-watch.json 的 lastSessionId（仍然是 858d11bb-519c-4137-b886-4b6481c46c56）、比对当前主会话 ID、并在相同情况下…（来自 session 858d11bb）
+
+- [ ] System: [2026-02-07 22:45:04 GMT+9] Cron: 脚本 `scripts/session_watch.py` 已经按照你的步骤实现：每次提取 `~/.openclaw/agents/main/sessions/sessions.json` 的当前 sessionId，读取上一个会话的 `.jsonl` 末尾 200 行，提炼包含规则/偏好/决定/风险/tod…（来自 session 858d11bb）
+
 - [x] 2) 读取工作区 `memory/session-watch.json` 的 `lastSessionId` 作为 last（若文件不存在则创建并写入 current，然后输出严格 NO_REPLY）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
 
 - [x] - 以“反幻觉 1/2/4/6”标准，提炼并自动写入：（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
@@ -106,8 +134,6 @@
 
 - [ ] Hooked session 29fd7f25-bd95-40df-9f83-39c49e4e62a0 (pending your manual summary).
 
-- [ ] Hooked session 858d11bb-519c-4137-b886-4b6481c46c56 (pending your manual summary).
-
 - [ ] Hooked session 8458a303-216e-4b40-8c5b-7b58a2fcbcd9 (pending your manual summary).
 
 - [ ] Hooked session 8aa32cbf-0335-4722-81cf-0404f3ef8524 (pending your manual summary).
@@ -116,6 +142,10 @@
 - [ ] （待捕获）
 
 ## ✅ Done（已完成，保留最近 20 条）
+- [x] Hooked session f89004de-17e0-467d-95d2-65e20400f570（自动总结于 2026-02-08T00:45:01Z）
+
+- [x] Hooked session 858d11bb-519c-4137-b886-4b6481c46c56（自动总结于 2026-02-07T23:45:01Z）
+
 - [x] Hooked session 30c91063-80a5-4d1e-8951-31996737d61a（自动总结于 2026-02-07T22:28:40Z）
 
 - [x] Hooked session 9bfdca08-2b9a-4e16-ba34-cc2cb0a3f84f（自动总结于 2026-02-07T22:25:01Z）
@@ -137,6 +167,3 @@
 - [x] 检查工具调用/子agent/隔离工作区/后台分配机制并汇报。（2026-02-06）
 - [x] 为 LINE 女儿专用 bot 创建独立工作区并绑定指定用户，彻底与主工作区解耦。（2026-02-06）
 - [x] 调整心跳逻辑：长时间不互动后仅触发一次 heartbeat，避免连续重复。（2026-02-06）
-- [x] 创建并加载 xhs-jewelry-copywriter 技能：珠宝产品信息自动改写为小红书标题+正文+标签，含参数解析与单位校验。（2026-02-06）
-
-- [x] Installed Context7 MCP server, created context7 user/dirs, systemd service, env placeholder `/etc/context7/context7.env`, and exposed port 3000; remaining manual step: set `CONTEXT7_API_KEY` before restarting. (2026-02-06)

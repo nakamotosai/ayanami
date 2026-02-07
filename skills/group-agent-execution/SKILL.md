@@ -14,7 +14,7 @@ Provide a single reference for onboarding, configuring, and operating Telegram g
 3. **Memory link**: Record the policy in `MEMORY.md` (core rule #13) so subsequent turns know the rule applies to future group agents.
 4. **Group onboarding**: Before spinning a new group agent, confirm the group exists, the bot is present, and you have the group ID (e.g. `-100xxxxxxxx`).
 5. **Prompting**: The new agent should inherit the same persona/system instructions as the main agent, with no extra subagent context.
-6. **Skill use**: Any agent asked to manage group agents should cite `config/group-agent-policy.json` and `MEMORY.md#L19-L22` to verify compliance before creating or modifying agents.
+6. **Skill use**: Any agent asked to manage group agents should cite `config/group-agent-policy.json` and `MEMORY.md（核心守则：群聊 agent 策略）` to verify compliance before creating or modifying agents.
 
 ## Workflow (for future additions)
 1. Confirm the Telegram group ID and ensure OpenClaw Bot is added with chat privileges. Mention which workspace file and policy entries will be updated.

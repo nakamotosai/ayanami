@@ -122,7 +122,7 @@ workspace/
 - Periodically review daily notes → extract what matters → update MEMORY.md
 - MEMORY.md is your "long-term memory" - the distilled essence
 
-**Memory Search:** Use semantic search (memory_search) before answering questions about prior work, decisions, or preferences. Don't guess — search.
+**Memory Search:** 禁止使用 memory_search；一律用 QMD（qmd search/query/get）检索记忆，不要猜测。
 
 **Memory Flush:** Context windows fill up. When they do, older messages get compacted or lost. Don't wait for this to happen — monitor and act.
 

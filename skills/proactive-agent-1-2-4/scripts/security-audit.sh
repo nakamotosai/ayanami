@@ -66,7 +66,7 @@ echo ""
 
 # 3. Check gateway security (if clawdbot config exists)
 echo "🌐 Checking gateway configuration..."
-CONFIG_FILE="$HOME/.clawdbot/clawdbot.json"
+CONFIG_FILE="$HOME/.openclaw/openclaw.json"
 if [ -f "$CONFIG_FILE" ]; then
     # Check if gateway is bound to loopback
     if grep -q '"bind".*"loopback"' "$CONFIG_FILE"; then

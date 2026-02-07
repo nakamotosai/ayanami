@@ -11,7 +11,8 @@
 - `github-uploader-workflow`：给 GH 仓库自动生成 issue/PR/summary 时候用的脚本集合。
 - `group-agent-execution`：启动多个 telegram agent 的模板，记录了 `spawn` 命令和环境变量。
 - `kaomoji-vibes`：颜文字库，用来结尾签名或心跳小纸条（按需要挑选一两个颜文字，就像我们平常那样）。
-- `local-websearch`：直接对接我们自托管的 SearXNG（URL `http://127.0.0.1:8888`，已经写进 `~/.bashrc` 的 `SEARXNG_URL`）。快速搜索示例：`python3 skills/local-websearch/scripts/searxng_search.py "openclaw news" --count 10`。
+- `mcporter-mcp`（MCP 统一入口）
+- `local-websearch`：直接对接我们自托管的 SearXNG（URL `http://127.0.0.1:8889`，已经写进 `~/.bashrc` 的 `SEARXNG_URL`）。快速搜索示例：`python3 skills/local-websearch/scripts/searxng_search.py "openclaw news" --count 10`。
 - `ddg-search`：DuckDuckGo 搜索脚本（`skills/ddg-search/scripts/search.sh "query"`），可以在分身 agent 中直接用来查最新网页、新闻或关键词。
 - `memory-curator`：把 daily log 压缩成 digest（用 `./scripts/generate-digest.sh [YYYY-MM-DD]` 生成骨架，补充 Summary/Key Events/Learnings/Tomorrow）。
 - `memory-lite`：要写 NOTE 或 grep 记忆时就进这里，常用脚本：`python3 scripts/memory_add.py --kind daily/long --text ...`、`bash scripts/memory_grep.sh "关键词"`、`python3 scripts/memory_summarize.py --days N`。

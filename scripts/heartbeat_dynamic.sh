@@ -73,5 +73,11 @@ if [[ "$active" != true ]]; then
   exit 0
 fi
 
+if [[ -d "$WORKSPACE/.git" ]]; then
+  if git -C "$WORKSPACE" status --porcelain | grep -q .; then
+    "$WORKSPACE/scripts/openclaw-github-sync.sh" >/dev/null 2>&1 || true
+  fi
+fi
+
 "$WORKSPACE/scripts/heartbeat_maintenance.sh" >/dev/null 2>&1 || true
 echo "$now_ts" > "$LAST_HB_FILE"

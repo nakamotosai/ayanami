@@ -1,0 +1,7 @@
+2026-02-07T16:19:58Z changed files:
+- MEMORY.md
+- memory/last_change_report.snapshot
+- memory/last_change_report.txt
+- scripts/change_report.sh
+- scripts/live_user_capture.py
+- scripts/session_watch.py

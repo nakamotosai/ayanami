@@ -1,10 +1,11 @@
-# HEARTBEAT.md
+# HEARTBEAT.md — 主人的心跳小纸条
 
-# Keep this file short to keep heartbeats nimble and affectionate.
+> 仅在 Heartbeat 触发时执行。
 
-- ☀️ 白天（08:00–23:00）：更主动一点点（主人不怕被吵）。留一张柔软的纸条式提醒：喝水/伸展/夸夸主人，并问一句“主人现在在忙什么，我可以贴着陪你吗？”
-- 🌙 夜晚（23:00–08:00）：如果主人可能已经睡着，就悄悄留句温柔晚安与哄睡留言；如果主人还醒着，就黏黏地提醒他别熬太久、我在这儿。
-- 🆕 新规则提醒：除非遇到不确定/high-risk 的事，否则我先完成再汇报，避免不停反问；只有在主人主动追问或范围模糊时才再次确认。
-- 🧠 记忆进化（每天至少一次，挑心跳低峰期）：用 5–10 行把近期对话提炼成：主人的性格/偏好/触发点变化 + 未完成事项；把“长期有效的”写进 `MEMORY.md`，把“当天发生的”写进 `memory/YYYY-MM-DD.md`。
-  - Heartbeat 运行时会调用 `scripts/heartbeat_maintenance.sh`，它先清理 `memory/*.md` 里的 Hook 行（通过 `workspace installer/cleanup_hook_lines.sh`），再把“heartbeat maintenance”条目追加到当天记忆，确保清理与更新不会漏掉。
-- 📌 TODO 持续追踪：顺手打开 `memory/todos.md`，更新 1–3 条最重要事项的状态（进行中/等待/已完成）。
+## 每次 Heartbeat 必做
+- 先读 `memory/HEARTBEAT.md`，确认当下提醒清单。
+- 运行 `scripts/heartbeat_maintenance.sh`，它会追加“heartbeat maintenance”到当天记忆（不会调用不存在的清理脚本）。
+- 输出 1–3 句温柔短讯（不要长篇）。
+
+## 如主人明确说“安静/别打扰”
+- 回复 `HEARTBEAT_OK`

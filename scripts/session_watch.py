@@ -18,6 +18,7 @@ WATCH_FILE = WORKSPACE / "memory" / "session-watch.json"
 MEMORY_FILE = WORKSPACE / "MEMORY.md"
 TODAY_MEMORY_DIR = WORKSPACE / "memory"
 TODOS_FILE = TODAY_MEMORY_DIR / "todos.md"
+NOW_FILE = TODAY_MEMORY_DIR / "NOW.md"
 TOKYO_TZ = timezone(timedelta(hours=9))
 MAX_TAIL_LINES = 200
 MAX_TODO_UPDATES = 7
@@ -83,6 +84,21 @@ TASK_KEYWORDS = [
     "整理",
     "回复",
 ]
+
+EMOTION_KEYWORDS = [
+    "生气", "很气", "气死", "愤怒", "怒", "火大", "烦", "讨厌", "不爽", "不满", "不满意", "失望", "很失望", "不开心", "生我的气",
+    "太烂", "很差", "不好", "糟糕", "受不了", "别再", "不要再", "不可以", "禁止", "不准",
+]
+PREFERENCE_KEYWORDS = [
+    "喜欢", "不喜欢", "希望", "想要", "必须", "需要", "一定", "以后", "永远", "记住", "别忘", "不要", "只能", "请你",
+]
+IMMEDIATE_KEYWORDS = [
+    "现在就", "马上", "立刻", "今天就", "务必", "必须", "非常",
+]
+
+EMOTION_LOWER = [keyword.lower() for keyword in EMOTION_KEYWORDS]
+PREFERENCE_LOWER = [keyword.lower() for keyword in PREFERENCE_KEYWORDS]
+IMMEDIATE_LOWER = [keyword.lower() for keyword in IMMEDIATE_KEYWORDS]
 
 DEFAULT_TODOS_CONTENT = textwrap.dedent("""\
     # TODOs（主人未完成事项清单）
@@ -212,6 +228,56 @@ def _ensure_daily_file(date_str: str) -> Path:
     if not target.exists():
         target.write_text(f"# 记忆日志 {date_str}\n\n", encoding="utf-8")
     return target
+
+
+def _ensure_now_file() -> Path:
+    target = NOW_FILE
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if not target.exists():
+        target.write_text("# NOW（滚动短期记忆）\n\n", encoding="utf-8")
+    return target
+
+
+def _append_now(user_texts: Sequence[str], stamp: str, session_id: str) -> bool:
+    if not user_texts:
+        return False
+    now_file = _ensure_now_file()
+    block = ["", f"## {stamp} session {session_id[:8]}"]
+    for idx, text in enumerate(user_texts, 1):
+        block.append(f"- {idx}. {text}")
+    with now_file.open("a", encoding="utf-8") as handle:
+        handle.write("\n".join(block))
+        handle.write("\n")
+    return True
+
+
+def _append_daily_user_log(user_texts: Sequence[str], stamp: str, session_id: str) -> None:
+    if not user_texts:
+        return
+    daily = _ensure_daily_file(datetime.now(TOKYO_TZ).date().isoformat())
+    block = ["", f"### 用户原话（session {session_id[:8]} @ {stamp}）"]
+    for idx, text in enumerate(user_texts, 1):
+        block.append(f"- {idx}. {text}")
+    block.append("")
+    with daily.open("a", encoding="utf-8") as handle:
+        handle.write("\n".join(block))
+
+
+def _priority_candidates(texts: Sequence[str]) -> list[str]:
+    candidates: list[str] = []
+    for text in texts:
+        for sentence in _split_sentences(text):
+            lowered = sentence.lower()
+            if any(keyword in lowered for keyword in EMOTION_LOWER):
+                candidates.append(sentence)
+                continue
+            if any(keyword in lowered for keyword in PREFERENCE_LOWER):
+                candidates.append(sentence)
+                continue
+            if any(keyword in lowered for keyword in IMMEDIATE_LOWER):
+                candidates.append(sentence)
+                continue
+    return candidates
 
 
 def _append_daily_log(summary: str, decision: str, risk: str, todos: str, stamp: str) -> None:
@@ -442,15 +508,23 @@ def main() -> None:
     user_texts = [msg["text"] for msg in messages if msg.get("role") == "user"]
     stamp = _iso_stamp_from_timestamp(messages[-1].get("timestamp") if messages else None)
 
+    _append_now(user_texts, stamp, last)
+    _append_daily_user_log(user_texts, stamp, last)
+
     summary = _compose_summary(user_texts, last, current)
     decision = _compose_decision(user_texts)
     risk = _compose_risk(user_texts)
     tasks = _extract_tasks(user_texts)
     todos_field = _compose_todo_field(tasks)
 
+    priority = _priority_candidates(user_texts)
     candidates = _sentence_candidates(user_texts)
-    if candidates:
-        _append_memory(candidates, stamp)
+    merged = []
+    for item in priority + candidates:
+        if item not in merged:
+            merged.append(item)
+    if merged:
+        _append_memory(merged, stamp)
     _append_daily_log(summary, decision, risk, todos_field, stamp)
     _update_todos(last, stamp, tasks)
 
@@ -458,7 +532,7 @@ def main() -> None:
         WATCH_FILE,
         {"lastSessionId": current, "updatedAt": int(time.time())},
     )
-    print("我已在后台整理并进化记忆 + 更新 todo")
+    print("NO_REPLY")
 
 
 if __name__ == "__main__":
