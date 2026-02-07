@@ -37,9 +37,9 @@ agents:
     workspace: workspace Githuber
     channel: telegram
     peer:
-      kind: group
-      id: "-1003321470751"
-    note: GitHub 上传专用 agent。
+      kind: user
+      id: "8138445887"
+    note: GitHub 上传专用 agent（使用个人 DM，避免与主 agent 同群）。
 
   - id: rednote
     name: Rednoter
