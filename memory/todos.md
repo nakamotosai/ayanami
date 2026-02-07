@@ -3,6 +3,20 @@
 > 规则：这里是“唯一真相源”。ちぃ会在心跳/复盘中持续更新状态，不会写完就丢。
 
 ## 🔥 Active（进行中）
+- [ ] System: [2026-02-08 00:16:41 GMT+9] Cron: 🔹 结论：`scripts/session_watch.py` 已按照你描述的流程实现了“/new 或 /reset → sessionId 变化 → 自动整理记忆/待办”的 hook：它会检测 `~/.openclaw/agents/main/sessions/sessions.json` 的主会话 ID、…（来自 session 7cd4d036）
+
+- [ ] 🔹 细节：`memory/session-watch.json` 目前记录 `f89004de-17e0-467d-95d2-65e20400f570`，因此还没触发写入；只要按 crontab（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`）定期跑，新的 /new 或 /r…（来自 session 7cd4d036）
+
+- [ ] System: [2026-02-08 00:18:44 GMT+9] Cron: ✅ 结论：`scripts/session_watch.py` 已经实现了你描述的“/new or /reset 后自动整理记忆”流程——它从 `~/.openclaw/agents/main/sessions/sessions.json` 里取主会话 `sessionId`，在变化时尾随上一会话 `.jso…（来自 session 7cd4d036）
+
+- [ ] 🔎 证据：`scripts/session_watch.py`（检查 `main()` 与 `_append_memory`/`_append_daily_log`/`_update_todos` 的流程）和 `scripts/session_watch.md`（说明 cron 调度样例）（来自 session 7cd4d036）
+
+- [ ] 🧩 下一步：用 cron 定期执行该脚本（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`）让它在每次 `/new` 或 `/reset` 后自动触发；如果还想更细化抽取规则，再调 KEYWORDS 列表即可（来自 session 7cd4d036）
+
+- [ ] System: [2026-02-08 00:20:24 GMT+9] Cron: 总结：我检查了 scripts/session_watch.py，它已经按要求读取 agent session、跟踪 memory/session-watch.json、提炼最后 200 行并分别更新 MEMORY.md、memory/YYYY-MM-DD.md 与 memory/todos.md，最后写回…（来自 session 7cd4d036）
+
+- [ ] 证据：脚本包含当前/上一次 sessionId 判定、尾部记录解析、反幻觉 1/2/4/6 风格的候选句过滤与日志写入，以及 todos 分区更新逻辑；路径是 /home/ubuntu/.openclaw/workspace/scripts/session_watch.py（来自 session 7cd4d036）
+
 - [ ] 🧩 下一步：保持 cron 每两分钟运行脚本，一旦 /new 或 /reset 触发会自动摘录历史会话并更新 MEMORY/记忆日志/todos；我也会在那时再向主人报告新的整理结果（来自 session f89004de）
 
 - [ ] System: [2026-02-07 23:48:28 GMT+9] Cron: 结论：`scripts/session_watch.py` 已经按要求实现“/new 或 /reset 后自动进化记忆”逻辑—它读取 `~/.openclaw/agents/main/sessions/sessions.json` 的 `agent:main:main.sessionId`，对比 `memor…（来自 session f89004de）
@@ -142,6 +156,8 @@
 - [ ] （待捕获）
 
 ## ✅ Done（已完成，保留最近 20 条）
+- [x] Hooked session 7cd4d036-ca73-46eb-84f7-5ee806fd7d3f（自动总结于 2026-02-08T01:30:01Z）
+
 - [x] Hooked session f89004de-17e0-467d-95d2-65e20400f570（自动总结于 2026-02-08T00:45:01Z）
 
 - [x] Hooked session 858d11bb-519c-4137-b886-4b6481c46c56（自动总结于 2026-02-07T23:45:01Z）
@@ -166,4 +182,3 @@
 - [x] 配置工具调用策略（禁用 memory_search）+ 新增 moltbook 代理与 -1003700261569 工作区绑定 + 迁移 line-daughter 工作区。（2026-02-06）
 - [x] 检查工具调用/子agent/隔离工作区/后台分配机制并汇报。（2026-02-06）
 - [x] 为 LINE 女儿专用 bot 创建独立工作区并绑定指定用户，彻底与主工作区解耦。（2026-02-06）
-- [x] 调整心跳逻辑：长时间不互动后仅触发一次 heartbeat，避免连续重复。（2026-02-06）

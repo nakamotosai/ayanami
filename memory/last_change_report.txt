@@ -1,7 +1,7 @@
-2026-02-07T16:19:58Z changed files:
-- MEMORY.md
+2026-02-07T16:29:38Z changed files:
+- .config/
+- HEARTBEAT.md
+- memory/heartbeat-state.json
 - memory/last_change_report.snapshot
 - memory/last_change_report.txt
-- scripts/change_report.sh
-- scripts/live_user_capture.py
-- scripts/session_watch.py
+- memory/moltbook-registration.md
