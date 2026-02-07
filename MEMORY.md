@@ -24,6 +24,7 @@
 15. **主动完成查询规则**：主人提问题后，我必须主动去查看或执行相应操作（如查配置、运行工具）而不是反问“要我去看吗”，除非明确说明要等待；这样的请求自动记进 memory 并遵守。
 16. **命令超时应对**：如果某个 CLI 命令因为输出太大/耗时被 SIGKILL，我会立即取消、改用更精确的查询（例如直接读 `~/.openclaw/cron/jobs.json`、`config/group-agent-policy.json`、`~/.openclaw/agents/main/sessions/sessions.json` 等轻量文件），并把结果写进记忆，而不是反复重跑那条重命令。
 17. **心跳感应修复**：`scripts/heartbeat_dynamic.sh` 每次运行会主动刷新 `memory/last_chat.ts`（通过 `openclaw sessions --json --active 120` 取最新会话更新时间），确保心跳触发不依赖外部写入。
+18. **语言偏好**：除非主人明确要求，所有回复必须中文，不要发英文。
 6. **Subagent 提醒**：当委派任务给子代理时，只需简短提及一次，不要反复解释"为了不打断聊天"，也不要额外加括号。
 
 ## 🧠 主人画像（持续更新）
@@ -75,3 +76,27 @@
 - [2026-02-07] Agents policy: Learner & Moltbook now default to qwen-portal/coder-model.
 - [2026-02-07] Learner完成 OpenClaw 官方文档深度学习，摘要/来源见 `skills/learner-docs/references/summary.md` 与 `sources.md`，并生成知识库卡片与流程图。
 - [2026-02-07] 模型极简：只保留 qwen-portal/coder-model，其他 oauth/login 记录清空。
+
+## 2026-02-07 子 agent合并
+- [2026-02-07T20:30:00Z] 彻底删除 LINE Family / Moltbook / Installer / Githuber / Rednoter / Learner / DailyBrief 子 agent：先把他们的 memory（含 Moltbook 30s 触发规则、401 失效提醒、claim/credentials 路径、回帖/发帖策略；DailyBrief 复原日报记录；Learner 启动日志；Githuber/Installer/Rednoter 的工作区初始化记录）直接摘抄进主 memory，再删掉对应 workspace/skills/cron 配置；后续由主 agent 一条线负责所有脚本/heartbeat/上传。
+
+
+## 🔁 2026-02-07 Proactive-agent-1-2-4 归档（已合并）
+- 来源：proactive-agent-1-2-4-workspace/MEMORY.md
+- ✅ 主人肖像：1989年生、上海人、现居浅草雷门，经营移民/留学/珠宝三条事业线，并同步打理数字资产、内容创作与 AI 自动化工具。 
+- 🔹 交流偏好：爱好温柔又主动的对话，信息分块、明确 next steps、异步优先、不重复，多依靠工具解决重复性任务。
+- 🔹 重要日期：正在推进日本国籍申请，未来一年要拿下国籍并稳住家庭与事业节奏。
+- 🔸 进行中的项目：让移民/留学/珠宝保持健康，构建可自主管理的 AI/自动化工具，同时运营公众号《假装在东京》并探索社区成长机会。
+- 🔸 关键决策：强调主动、暖心的交流风格，把自动化与搜索工具（如 tavily-search、find-skills）推上前线来处理标准事务。
+- 🔸 经验提醒：完成 proactive agent 的 onboarding，记录姓名/时区/目标/偏好，减少重复提问的成本。
+- 🔹 记住的人：Q大神（妻子）、5岁儿子与 12 岁女儿（倾城），谈及家庭/学习/语言时优先顾及他们的节奏与偏好。
+- ✅ 以上内容已沉淀到主 memory，proactive-agent-1-2-4 workspace 可安全删除。
+
+## 自动会话钩子（2026-02-07T21:06:21Z）
+- A) `MEMORY.md`：只写长期有效的新规则/偏好/固定事实（不重复旧内容）
+- - 不要编造会话中不存在的事实；不确定就写 ⚠️ 并提出需要的信息
+- Return your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.
+
+## 自动会话钩子（2026-02-07T21:20:40Z）
+- If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.
+- [2026-02-07T21:23:00Z] 运行 session-watch 自动化：检测 `memory/session-watch.json` 中的 `lastSessionId` 与当前 sessionId，若不同即读取旧转录（最后 200 行）并按反幻觉 1/2/4/6 填写 MEMORY/今日记忆/todos，再刷新 watch 文件与通知机制，确保未来 /new 或 /reset 后记忆能自动进化。

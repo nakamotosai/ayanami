@@ -50,3 +50,10 @@
 
 ## 新增技能
 - `core-file-maintenance`：核心文件自动同步规则与维护流程（AGENTS/SOUL/USER/TOOLS/MEMORY）。
+
+
+## MCP (mcporter)
+- 统一入口：mcporter（配置在 /home/ubuntu/.openclaw/workspace/config/mcporter.json）。
+- 已接入：qmd（memory 查询）与 searxng（联网搜索）。
+- 快速查看：cd /home/ubuntu/.openclaw/workspace && mcporter list。
+- 详细用法：skills/mcporter-mcp/SKILL.md。

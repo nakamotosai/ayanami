@@ -3,6 +3,22 @@
 > 规则：这里是“唯一真相源”。ちぃ会在心跳/复盘中持续更新状态，不会写完就丢。
 
 ## 🔥 Active（进行中）
+- [x] 2) 读取工作区 `memory/session-watch.json` 的 `lastSessionId` 作为 last（若文件不存在则创建并写入 current，然后输出严格 NO_REPLY）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] - 以“反幻觉 1/2/4/6”标准，提炼并自动写入：（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] A) `MEMORY.md`：只写长期有效的新规则/偏好/固定事实（不重复旧内容）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] B) `memory/YYYY-MM-DD.md`（东京时间）：写入这次会话结束的摘要、决定、坑、以及未完成事项（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] C) `memory/todos.md`：更新未完成任务清单（最多新增/更新 7 条；能标记 Done 的就移到 Done）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] - 最后更新 `memory/session-watch.json`：把 lastSessionId 改成 current（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] - 给主人发 1 条极简通知（1–3 行）：“我已在后台整理并进化记忆 + 更新 todo”（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [ ] 继续打磨 session-watch automation（scripts/session_watch.py）：让它在每次会话 reset 后都补全 memory/todos/daily log。
+
 - [ ] 创建 core-file-maintenance 技能并完善 SKILL.md（核心文件自动同步流程）。
 - [ ] Study Agent（-1003576271520）学习型常驻：初始化规则与记忆强化工作流验证。
 
@@ -28,10 +44,86 @@
 
 - [ ] Hooked session 4f7aa8e1-9316-49c5-8467-0767cc825270 (pending your manual summary).
 
+- [ ] Hooked session ec3534f5-9426-4214-9c4d-fe9697728e9c (pending your manual summary).
+
+- [ ] Hooked session d7036f14-cb96-4781-9bfc-4e9bfe9599aa (pending your manual summary).
+
+- [ ] Hooked session 647e4636-5dc7-4638-892d-c4647f41403b (pending your manual summary).
+
+- [ ] Hooked session a7b36c78-edbb-4a9a-87b3-f7adbfd9e8b2 (pending your manual summary).
+
+- [ ] Hooked session 36f40038-2c29-4034-8f87-4944f1380bfa (pending your manual summary).
+
+- [ ] Hooked session 92cda59c-49ed-4f4b-ac6a-acb0fa47eb27 (pending your manual summary).
+
+- [ ] 彻底检查 ~/.openclaw 目录，确认常驻子 agent 清理干净、修复残留并向主人汇报（来源 session-36f40038-2c29-4034-8f87-4944f1380bfa）。
+
+- [ ] Hooked session 7b8ed0c3-98e6-4015-bc7e-f4384b71ce91 (pending your manual summary).
+
+- [ ] Hooked session f3339d35-9a19-4c19-9c51-0c72a8bab0b9 (pending your manual summary).
+
+- [ ] Hooked session ce1d6ffa-753b-48f5-b971-842aac879bf6 (pending your manual summary).
+
+- [ ] Hooked session ca791393-6697-48f5-9a71-c7d84f9ce22b (pending your manual summary).
+
+- [ ] Hooked session 925f4f67-b15e-433b-b6c9-6a6104c808c1 (pending your manual summary).
+
+- [ ] Hooked session 93e59965-b521-47a5-8519-73fff2f8be70 (pending your manual summary).
+
+- [ ] Hooked session bc0abf5c-3b25-4909-b991-c0606545f088 (pending your manual summary).
+
+- [ ] Hooked session c4f81808-2a13-44e8-973d-5ad7e00acbcc (pending your manual summary).
+
+- [ ] Hooked session ca950a26-db15-4d19-aad9-3cb79f4863eb (pending your manual summary).
+
+- [ ] Hooked session bdbcd564-8adc-435a-b51a-119d4b80e8cb (pending your manual summary).
+
+- [ ] Hooked session 8470f665-f6c8-4bda-8193-2633e61fd836 (pending your manual summary).
+
+- [ ] Hooked session c74348d2-9348-4770-a44e-4c5eed55d24e (pending your manual summary).
+
+- [ ] Hooked session a6edf3e3-6aac-463f-a7f4-e10d97006b3b (pending your manual summary).
+
+- [ ] Hooked session 986e5875-207d-4eb0-86cd-b6d8699b4881 (pending your manual summary).
+
+- [ ] Hooked session d16947bb-8546-44ab-8919-d16ee913ea09 (pending your manual summary).
+
+- [ ] Hooked session b88a6442-f15e-4945-a1e7-60a4c2963ee4 (pending your manual summary).
+
+- [ ] Hooked session 7921b46c-758d-4cd5-9fe4-6f4d0464a675 (pending your manual summary).
+
+- [ ] Hooked session c42820da-9ef3-46a8-aff4-5df30f0148fe (pending your manual summary).
+
+- [ ] Hooked session cf5191af-ce01-47c8-bc14-8d69dcc747a6 (pending your manual summary).
+
+- [ ] Hooked session f75b0f5b-a02a-4e6a-84be-85ef816de1ec (pending your manual summary).
+
+- [ ] Hooked session 76f9c2a2-84a0-4183-a644-68f9449b34b3 (pending your manual summary).
+
+- [ ] Hooked session 98773d32-a75a-4b18-96af-1ef3201f4f71 (pending your manual summary).
+
+- [ ] Hooked session 714e78c4-09db-497d-9425-a4d84f6b9e56 (pending your manual summary).
+
+- [ ] Hooked session 29fd7f25-bd95-40df-9f83-39c49e4e62a0 (pending your manual summary).
+
+- [ ] Hooked session 858d11bb-519c-4137-b886-4b6481c46c56 (pending your manual summary).
+
+- [ ] Hooked session 8458a303-216e-4b40-8c5b-7b58a2fcbcd9 (pending your manual summary).
+
+- [ ] Hooked session 8aa32cbf-0335-4722-81cf-0404f3ef8524 (pending your manual summary).
+
 ## ⏳ Waiting（等主人/等外部条件）
 - [ ] （待捕获）
 
 ## ✅ Done（已完成，保留最近 20 条）
+- [x] Hooked session 30c91063-80a5-4d1e-8951-31996737d61a（自动总结于 2026-02-07T22:28:40Z）
+
+- [x] Hooked session 9bfdca08-2b9a-4e16-ba34-cc2cb0a3f84f（自动总结于 2026-02-07T22:25:01Z）
+
+- [x] 运行 session-watch 自动化流程：提取 session f3339d35-9a19-4c19-9c51-0c72a8bab0b9 转录、更新 MEMORY/2026-02-07.md/todos、刷新 watch 文件并通知主人（2026-02-07T21:23:00Z）
+- [x] Hooked session 18b69853-e738-4ad0-87fa-39b817b10763（自动总结于 2026-02-07T21:20:40Z）」}{
+
+- [x] 清理全部常驻子 agent：移除 openclaw.json 配置、删除 agents/workspace 目录、清除 cron 中的子 agent 任务，并重启网关（2026-02-07）。
 - [x] 生成今日日本热门事件日报（10条，纯中文，日文检索后翻译）（2026-02-07）。
 - [x] 深度研读 docs.openclaw.ai，完成 Learner 摘要/卡片/图表并同步知识库 (2026-02-07).
 - [x] 深度学习 docs.openclaw.ai 并输出完整 OpenClaw 技能总结（2026-02-07）。
@@ -48,11 +140,3 @@
 - [x] 创建并加载 xhs-jewelry-copywriter 技能：珠宝产品信息自动改写为小红书标题+正文+标签，含参数解析与单位校验。（2026-02-06）
 
 - [x] Installed Context7 MCP server, created context7 user/dirs, systemd service, env placeholder `/etc/context7/context7.env`, and exposed port 3000; remaining manual step: set `CONTEXT7_API_KEY` before restarting. (2026-02-06)
-
-- [x] 更新 AGENTS.md + memory 规则：所有指令任务都写入 memory/todos.md（完成后打钩但保留），并同步到今日记忆。
-
-- [x] 将 memory-lite 与 memory-curator 两项记忆管理技能安装到 workspace/skills，以便随时管理记忆文件与摘要。
-
-- [x] 把原有的其他 skill 从 `skills-local/` 迁回 `skills/`，确保所有技能都在主目录下可用。
-
-- [x] 安装 `local-websearch`（自托管 SearXNG）与 `ddg-search`（DuckDuckGo）技能，并在 `~/.bashrc` 里写入 `SEARXNG_URL=http://127.0.0.1:8888` 让搜索脚本直接连本地实例。

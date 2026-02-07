@@ -8,10 +8,11 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parents[1]
-SESSIONS_DIR = BASE_DIR / '.openclaw' / 'agents' / 'main' / 'sessions'
-OUTPUT_FILE = BASE_DIR / 'memory' / 'auto_memory.md'
-STATE_FILE = BASE_DIR / 'memory' / 'auto_memory_state.json'
+BASE_DIR = Path("/home/ubuntu/.openclaw")
+WORKSPACE = BASE_DIR / "workspace"
+SESSIONS_DIR = BASE_DIR / "agents" / "main" / "sessions"
+OUTPUT_FILE = WORKSPACE / "memory" / "auto_memory.md"
+STATE_FILE = WORKSPACE / "memory" / "auto_memory_state.json"
 KEYWORDS = [
     '记住',
     '记得',

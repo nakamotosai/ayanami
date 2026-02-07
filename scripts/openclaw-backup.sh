@@ -17,12 +17,18 @@ if ! flock -n 9; then
 fi
 
 # Create archive (config + workspace + extensions)
-tar -czf "$OUT" \
+if tar -czf "$OUT" \
+  --exclude=home/ubuntu/.openclaw/workspace/.git \
+  --exclude=home/ubuntu/.openclaw/workspace/.venv \
   -C / \
   home/ubuntu/.openclaw/openclaw.json \
   home/ubuntu/.openclaw/workspace \
   home/ubuntu/.openclaw/extensions \
-  2>/dev/null || true
+  ; then
+  success=1
+else
+  success=0
+fi
 
 # Retention: keep newest $KEEP
 mapfile -t files < <(ls -1t "$BACKUP_DIR"/openclaw_*.tar.gz 2>/dev/null || true)
@@ -33,9 +39,13 @@ if [ "$count" -gt "$KEEP" ]; then
   done
 fi
 
-# Notify Sai via Telegram so the report feels like a human update
-NOTIFY_TS="$(date '+%Y/%m/%d %H:%M:%S %Z')"
-NOTIFY_TARGET="8138445887"
-OPENCLAW_CLI="/home/ubuntu/.npm-global/bin/openclaw"
-NOTIFY_MSG="叽~ 主人，我在 ${NOTIFY_TS} 完成了 hourly backup（${OUT##*/}），最新 50 份都保护好惹，继续开心做事吧~"
-"$OPENCLAW_CLI" message send --target "$NOTIFY_TARGET" --message "$NOTIFY_MSG" >/dev/null 2>&1 || true
+# Notify Sai via Telegram only on success
+if [ "$success" -eq 1 ]; then
+  NOTIFY_TS="$(date '+%Y/%m/%d %H:%M:%S %Z')"
+  NOTIFY_TARGET="8138445887"
+  OPENCLAW_CLI="/home/ubuntu/.npm-global/bin/openclaw"
+  NOTIFY_MSG="叽~ 主人，我在 ${NOTIFY_TS} 完成了 hourly backup（${OUT##*/}），最新 50 份都保护好惹，继续开心做事吧~"
+  "$OPENCLAW_CLI" message send --target "$NOTIFY_TARGET" --message "$NOTIFY_MSG" >/dev/null 2>&1 || true
+else
+  echo "[openclaw-backup] backup failed" >&2
+fi
