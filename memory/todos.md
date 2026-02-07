@@ -22,10 +22,14 @@
 
 - [ ] Hooked session 03fb58fa-7bd4-4557-abb2-c6d4fcc75963 (pending your manual summary).
 
+- [ ] Hooked session eb39e6f8-9b25-4f1f-8f61-2d8ccf0efd4d (pending your manual summary).
+
 ## ⏳ Waiting（等主人/等外部条件）
 - [ ] （待捕获）
 
 ## ✅ Done（已完成，保留最近 20 条）
+- [x] 深度研读 docs.openclaw.ai，完成 Learner 摘要/卡片/图表并同步知识库 (2026-02-07).
+- [x] 深度学习 docs.openclaw.ai 并输出完整 OpenClaw 技能总结（2026-02-07）。
 - [x] Ran `scripts/prompt_healthcheck.sh` and confirmed `docs/prompt-upgrade-decisions.md` exists for the prompt upgrade follow-through (2026-02-07).
 - [x] Installed tavily-search、find-skills、proactive-agent-1-2-4 and documented them in TOOLS.md for quick reference (2026-02-07).
 - [x] Added `export TAVILY_API_KEY=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` to `~/.bashrc` so tavily-search can talk to the internet out of the box (2026-02-07).

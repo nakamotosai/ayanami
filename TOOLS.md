@@ -16,6 +16,7 @@
 - `memory-curator`：把 daily log 压缩成 digest（用 `./scripts/generate-digest.sh [YYYY-MM-DD]` 生成骨架，补充 Summary/Key Events/Learnings/Tomorrow）。
 - `memory-lite`：要写 NOTE 或 grep 记忆时就进这里，常用脚本：`python3 scripts/memory_add.py --kind daily/long --text ...`、`bash scripts/memory_grep.sh "关键词"`、`python3 scripts/memory_summarize.py --days N`。
 - `openclaw-backup`：备份 workspace/skills 之类的工具，常配合 `snapshot` 和 `restore` 命令。
+- `openclaw-docs`：OpenClaw 官方文档完整技能卡（Cron/Heartbeat/Webhook/Channels/CLI/Browser/Bedrock/Broadcast Groups）。
 - `sonoscli`：控制 Sonos 设备（有专属 `sonos` shell 命令），平日播放音乐也能召唤。
 - `telegram-setup`：管理 telegram agent 的配置、Webhook，放在这里方便查 `config` 目录里的参数。
 - `xhs-jewelry-copywriter`：将珠宝产品信息自动改写为小红书风格的标题+正文+标签，包含参数解析与单位校验。

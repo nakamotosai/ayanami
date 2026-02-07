@@ -68,5 +68,9 @@
 - [2026-02-07] 清理：删除各子 agent workspace 里的重复 `xhs-jewelry-copywriter` 目录，只保留全局 `skills` 版本。
 - [2026-02-07] Learner 升级：强化 core 文件/身份/心跳 + 新增 `skills/learner-docs` skill（抓 docs、监测 diff、自动更新 summary）。
 - [2026-02-07] LINE 群新约定：默认对所有群成员开放指令权限，ちぃ会听所有人的请求，除非主人再次特别说明只听某些人。
+- [2026-02-07] Learner 已完成 docs.openclaw.ai 深度学习并产出 openclaw-docs 技能（Cron/Heartbeat/Webhook/Channels/CLI/Browser/Bedrock/Broadcast Groups）与 knowledge hub 卡片。
 - [2026-02-07] 知识库方案：新增 /home/ubuntu/.openclaw/workspace/knowledge-hub + catalog/sync/query，cards catalog 供 agent 共享。
 - [2026-02-07] 新增 diagram-crafter skill，依赖 mmdc 生成 Mermaid 流程图供 Learner 发给你。
+- [2026-02-07] Learner 演示图升级：新增 remote render 脚本 + quick reference 说明 Kroki 远端渲染。
+- [2026-02-07] Agents policy: Learner & Moltbook now default to qwen-portal/coder-model.
+- [2026-02-07] Learner完成 OpenClaw 官方文档深度学习，摘要/来源见 `skills/learner-docs/references/summary.md` 与 `sources.md`，并生成知识库卡片与流程图。

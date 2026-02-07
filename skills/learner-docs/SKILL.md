@@ -21,5 +21,14 @@ python3 skills/learner-docs/scripts/learner_docs_watch.py
 ```
 
 ## Integration
-Learner should call these scripts after reading a batch of docs, then copy the newest summary into `/home/ubuntu/.openclaw/workspace/skills/learner-docs/summary.md` so other agents can use the distillate.
+Learner should call these scripts after reading a batch of docs, then update the latest study artifacts in:
+- `skills/learner-docs/references/summary.md`
+- `skills/learner-docs/references/sources.md`
+
 The resulting cards should live under `skills/learner-docs/cards/` with YAML front matter (title/source/version/tags/related_skill/summary). After updating the cards, run `scripts/knowledge_hub_sync.py` to sync them into `/home/ubuntu/.openclaw/workspace/knowledge-hub/catalog.yaml`, making knowledge hub entries queryable by any agent. Use `scripts/knowledge_hub_query.py --tag <tag>` to fetch the freshest cards.
+
+## Latest Study (OpenClaw docs)
+- Summary: `skills/learner-docs/references/summary.md`
+- Sources: `skills/learner-docs/references/sources.md`
+- Fetch log: `skills/learner-docs/references/last_summary.md`
+- Snapshot manifest: `skills/learner-docs/references/docs_manifest.json`

@@ -1,0 +1,18 @@
+flowchart TD
+  A[Task or trigger] --> B{Exact time needed?}
+  B -- Yes --> C[Cron job]
+  B -- No --> D{Batch with other checks?}
+  D -- Yes --> E[Heartbeat]
+  D -- No --> C
+  C --> C1{Isolation required?}
+  C1 -- Yes --> C2[Isolated agentTurn with delivery]
+  C1 -- No --> C3[Main session systemEvent]
+  A --> F{External trigger?}
+  F -- Yes --> G[Webhook wake or agent]
+  G --> C
+  A --> H{Chat surface}
+  H --> H1[Telegram Discord WhatsApp]
+  H1 --> H2[Pairing allowlists mention gating]
+  A --> I{Multi agent?}
+  I -- WhatsApp --> J[Broadcast groups parallel or sequential]
+  I -- Other --> K[Multi agent routing]

@@ -20,4 +20,5 @@
 
 ## Pro tip
 - Learner can include the Mermaid text in the skill output (cards/reports) then run this script to auto-build the diagram and share the PNG.
+- Or skip local Chrome by calling `skills/learner-docs/scripts/render_diagram_remote.py --mermaid=<file> --output=<png>`; it posts to Kroki and saves the PNG in `skills/learner-docs/reports/` so other agent can fetch the asset.
 - Mention `diagram-crafter quick reference` whenever you want me to generate a diagram for you.
