@@ -1,0 +1,87 @@
+{
+  "mcpServers": {
+    "qmd": {
+      "command": "/home/ubuntu/.bun/bin/qmd",
+      "args": [
+        "mcp"
+      ]
+    },
+    "searxng": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-searxng"
+      ],
+      "env": {
+        "SEARXNG_URL": "http://localhost:8765"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/ubuntu/.openclaw/workspace"
+      ]
+    },
+    "fetch": {
+      "command": "/home/ubuntu/.local/bin/mcp-server-fetch"
+    },
+    "git": {
+      "command": "/home/ubuntu/.local/bin/mcp-server-git",
+      "args": [
+        "--repository",
+        "/home/ubuntu/.openclaw/workspace"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "REDACTED"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "docker": {
+      "command": "/home/ubuntu/.local/bin/mcp-server-docker"
+    },
+    "markitdown": {
+      "command": "/home/ubuntu/.local/bin/markitdown-mcp"
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "ctx7sk-1de941f0-5123-418c-ac94-ba78738740b1"
+      }
+    },
+    "image-extractor": {
+      "command": "/home/ubuntu/.openclaw/workspace/mcp-image-extractor/dist/index.js",
+      "args": []
+    },
+    "image-processing-tool": {
+      "command": "python3",
+      "args": [
+        "/home/ubuntu/.openclaw/workspace/MCP-Image-Processing-Tool/mcp_image_server.py"
+      ]
+    },
+    "tesseract-ocr": {
+      "command": "node",
+      "args": [
+        "/home/ubuntu/.openclaw/workspace/mcp-tesseract-server/index.js"
+      ]
+    }
+  }
+}

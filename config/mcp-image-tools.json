@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ffmpeg-helper": {
+      "command": "/home/ubuntu/.openclaw/workspace/mcp-ffmpeg-helper/build/index.js",
+      "args": []
+    },
+    "image-extractor": {
+      "command": "/home/ubuntu/.openclaw/workspace/mcp-image-extractor/build/index.js",
+      "args": []
+    },
+    "image-processing-tool": {
+      "command": "/home/ubuntu/.openclaw/workspace/MCP-Image-Processing-Tool/build/index.js",
+      "args": []
+    }
+  }
+}

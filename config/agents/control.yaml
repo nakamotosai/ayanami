@@ -1,0 +1,9 @@
+agents:
+  - id: main
+    name: Main
+    workspace: /home/ubuntu/.openclaw/workspace
+    channel: telegram
+    peer:
+      kind: group
+      id: "*"
+    note: Default fallback agent that handles any Telegram group not matched elsewhere.

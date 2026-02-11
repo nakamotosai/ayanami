@@ -1,0 +1,45 @@
+---
+name: codex-executor
+description: 将复杂任务交给 Codex CLI 执行（搜索/写代码/改文件/改 OpenClaw 本身），主 agent 直接调用；支持 Telegram 进度通知。
+priority: HIGH
+---
+
+# Codex Executor
+
+## When to use
+Use this skill whenever the user requests complex tasks that require tool use: deep search, code changes, multi-step shell work, or edits to OpenClaw config.
+
+## Core rule
+Main agent should call Codex CLI directly via exec. Do NOT spawn subagents unless explicitly asked.
+
+## Progress messages
+Send Telegram updates at start and end via:
+- /home/ubuntu/.openclaw/workspace/skills/deep-search-pipeline/scripts/notify_progress.sh "message"
+
+## Output length policy (IMPORTANT)
+- Default: produce a full answer, not a teaser.
+- For news or lists, output the full list (e.g., 10 items) with 2-3 bullet points each.
+- Always include sources for each item.
+- Never replace results with vague commentary or personal remarks.
+
+## How to run Codex
+Run non-interactively:
+- printf "task\n" | codex exec -m gpt-5.1-codex-mini --sandbox danger-full-access --dangerously-bypass-approvals-and-sandbox
+
+If a repo is involved, include:
+- cd /home/ubuntu/.openclaw/workspace && printf "task\n" | codex exec -m gpt-5.1-codex-mini --sandbox danger-full-access --dangerously-bypass-approvals-and-sandbox
+
+## Output expectations
+- Return concise summary of what was done AND the full requested content.
+- If Codex proposes a diff, apply it using `codex apply` and then summarize changes.
+
+## Failure handling
+If Codex fails due to auth or quota, report error and fall back to local tools only if explicitly approved by user.
+
+## Quick Search Mode
+Use when the user is waiting live or wants speed. Target 30-60s. Provide a short brief with 3-5 bullets and 2-3 sources.
+
+## Telegram progress templates
+Start: "🚀 叽～主人，已切到 Codex 执行器啦，我这就开搜～(｀・ω・´)ゞ"
+Mid (if >30s): "⏳ 叽～还在抓资料，马上就给你结果～(｡•ㅅ•｡)"
+End: "✅ 叽～完成啦！结果已整理好，马上奉上～(｡•̀ᴗ-)✧"

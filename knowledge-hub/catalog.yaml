@@ -1,0 +1,172 @@
+entries:
+- body: '## Why it matters
+
+    OpenClaw’s operational model revolves around deterministic routing, scheduler
+    separation (heartbeat vs cron), and safe external triggers. This card collects
+    the core configuration behaviors and CLI entrypoints that govern those workflows.
+
+
+    ## Key facts
+
+    - `openclaw agent` runs a single agent turn; `--agent` targets a configured agent;
+    `--deliver` and reply routing are supported.
+
+    - `openclaw agents` manages isolated workspaces and writes identity fields from
+    `IDENTITY.md` or CLI overrides.
+
+    - `openclaw approvals` manages exec approvals per host and stores files at `~/.openclaw/exec-approvals.json`.
+
+    - `openclaw browser` manages profiles (openclaw/chrome), tabs, snapshot/screenshot,
+    and ref-based UI actions; Chrome relay needs manual attach.
+
+    - Cron runs in the gateway; main-session `systemEvent` rides heartbeat, isolated
+    `agentTurn` runs in `cron:` sessions with delivery controls.
+
+    - Heartbeat is best for batched, context-aware checks; cron is for exact timing,
+    isolation, or model overrides.
+
+    - Webhooks expose `/hooks/wake` and `/hooks/agent` with token auth; mappings/presets
+    enable Gmail and custom transforms.
+
+    - Polls work on WhatsApp/Discord/Teams, with platform-specific limits.
+
+    - Telegram DMs share main session; groups are isolated and mention-gated by default;
+    draft streaming is DM-only.
+
+    - Discord requires intents and has pairing/allowlist DM policies; guild channels
+    are isolated.
+
+    - Bedrock uses AWS credential chain; optional discovery via `bedrock:ListFoundationModels`.
+
+    - Broadcast groups (WhatsApp) fan out to multiple agents, parallel or sequential,
+    with isolated sessions.
+
+
+    ## Patterns / guidance
+
+    - Prefer heartbeat for “awareness batching” and cron for “precision + isolation.”
+
+    - Treat webhooks and external payloads as untrusted; keep hooks behind tailnet/proxy
+    and use token auth.
+
+    - Use agent/workspace separation to encode personas, tool permissions, and model
+    costs.
+
+
+    ## Practical starter steps
+
+    1) Configure a primary chat channel (Telegram is fastest) and keep DM pairing
+    on.
+
+    2) Add heartbeat checklist in `HEARTBEAT.md` for periodic monitoring.
+
+    3) Use cron for exact-time reminders or heavy batch jobs with `--session isolated`.
+
+    4) Enable hooks for external events and use `/hooks/agent` for isolated runs.
+
+    5) Add Bedrock provider only after AWS credentials are detected or set `AWS_PROFILE=default`
+    on EC2.'
+  compression_level: overview
+  context_references:
+  - skills/learner-docs/references/summary.md
+  - skills/learner-docs/references/sources.md
+  - skills/learner-docs/references/last_summary.md
+  path: skills/learner-docs/cards/openclaw-docs-2026-02-07.md
+  related_skill: learner-docs
+  source: https://docs.openclaw.ai/
+  summary: Key operational facts and patterns for OpenClaw CLI, automation (cron/heartbeat/webhooks),
+    channel setup, Bedrock auth, and broadcast groups.
+  tags:
+  - openclaw
+  - docs
+  - cli
+  - automation
+  - channels
+  - bedrock
+  title: OpenClaw Docs Deep Study (CLI, Automation, Channels, Bedrock)
+  updated_at: '2026-02-07T03:57:21.527449Z'
+  version: 2026-02-07
+- body: '## Key Facts
+
+    - Cron runs in Gateway; jobs persist under `~/.openclaw/cron/` with main vs isolated
+    execution.
+
+    - Heartbeat is periodic main-session awareness; returns `HEARTBEAT_OK` when idle.
+
+    - Webhooks (`/hooks`) accept wake/agent actions with token auth; mappings/presets
+    enable Gmail flows.
+
+    - Channels are modular; Telegram uses grammY with pairing default for DMs.
+
+    - Browser CLI controls OpenClaw-managed and extension-attached Chrome profiles.
+
+    - Bedrock uses AWS SDK credentials; supports automatic model discovery.
+
+    - Broadcast Groups (experimental) allow multi-agent responses in WhatsApp.
+
+
+    ## How to Use (Quick Steps)
+
+    1) Cron reminder: `openclaw cron add --at ... --session main --system-event ...
+    --wake now`.
+
+    2) Telegram: set `channels.telegram.botToken` or `TELEGRAM_BOT_TOKEN`; disable
+    privacy mode for full group visibility.
+
+    3) Webhook trigger: enable hooks + token; POST `/hooks/wake` or `/hooks/agent`.
+
+    4) Browser automation: `openclaw browser --browser-profile openclaw start` → `open`
+    → `snapshot`.
+
+
+    ## Sources
+
+    - https://docs.openclaw.ai/channels
+
+    - https://docs.openclaw.ai/channels/telegram
+
+    - https://docs.openclaw.ai/automation/cron-jobs
+
+    - https://docs.openclaw.ai/automation/cron-vs-heartbeat
+
+    - https://docs.openclaw.ai/automation/webhook
+
+    - https://docs.openclaw.ai/automation/poll
+
+    - https://docs.openclaw.ai/automation/gmail-pubsub
+
+    - https://docs.openclaw.ai/cli/browser
+
+    - https://docs.openclaw.ai/cli/agent
+
+    - https://docs.openclaw.ai/cli/agents
+
+    - https://docs.openclaw.ai/bedrock
+
+    - https://docs.openclaw.ai/broadcast-groups
+
+
+    ## Metadata
+
+    - context_references: ["/home/ubuntu/.openclaw/workspace/skills/learner-docs/references/summary.md",
+    "/home/ubuntu/.openclaw/workspace/skills/learner-docs/references/last_summary.md"]
+
+    - compression_level: medium'
+  path: skills/learner-docs/cards/openclaw-official-docs.md
+  related_skill: openclaw-docs
+  source: https://docs.openclaw.ai/
+  summary: Distills OpenClaw’s official docs into a compact skill covering cron/heartbeat/webhooks,
+    channel setup (Telegram/WhatsApp/etc.), CLI usage, browser control, Bedrock provider
+    setup, and broadcast groups.
+  tags:
+  - openclaw
+  - docs
+  - automation
+  - channels
+  - cli
+  - browser
+  - webhooks
+  title: OpenClaw Official Docs — Core Skill
+  updated_at: '2026-02-07T03:57:21.528393Z'
+  version: '2026-02-07'
+last_synced: '2026-02-07T03:57:21.528424Z'

@@ -1,0 +1,288 @@
+# TODOs（主人未完成事项清单）
+
+> 规则：这里是“唯一真相源”。ちぃ会在心跳/复盘中持续更新状态，不会写完就丢。
+
+## 🔥 Active（进行中）
+- [ ] 检查 `memory/heartbeat-state.json`，如果距离上次 Moltbook 检查超过 30 分钟，则访问 https://www.moltbook.com/heartbeat.md（来自 session 04dece60）
+
+- [ ] 汇报是否有需要立即处理的事项（来自 session 04dece60）
+
+- [ ] 检查 `memory/heartbeat-state.json`，若超过 30 分钟则访问 https://www.moltbook.com/heartbeat.md 获取最新指令（来自 session 04dece60）
+
+- [ ] 汇总以上内容，告诉主 agent 是否有紧急事项或 Moltbook 更新（来自 session 04dece60）
+
+- [ ] 主人，心跳任务已经处理好啦（来自 session 04dece60）
+
+- [ ] 执行了 `scripts/heartbeat_maintenance.sh`，日志已更新并归档（来自 session 04dece60）
+
+- [ ] 🔧 已完成：我检查了 `/home/ubuntu/.openclaw/openclaw.json`，当前的 `default_model` 已从原先的 `openai-codex/gpt-5.1-codex-mini` 修改为 `"qwen"`（也就是 `qwen-portal/coder-model` 的别名）（来自 session 0170423e）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +23m 2026-02-08 17:20 GMT+9] 请问你能利用codex cli能力了吗（来自 session 0170423e）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +17m 2026-02-08 17:39 GMT+9] 请问你能利用codex cli能力了吗（来自 session 0170423e）
+
+- [ ] Also, check memory/todos.md and ensure the "change default model to qwen" task is marked as [x]（来自 session 0170423e）
+
+- [ ] 我已经帮你更新了今天的日志和 `todos.md`（来自 session 0170423e）
+
+- [ ] 具体完成的操作如下：（来自 session 0170423e）
+
+- [ ] **更新日志**：检查了 `memory/2026-02-08.md`，追加了关于默认模型更新为 "qwen" 以及确认 `codex-executor` 能力的会话摘要（来自 session 0170423e）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +38s 2026-02-08 16:18 GMT+9] 请你用深度搜索搜一下比特币最新消息（来自 session cfff35d0）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +5m 2026-02-08 16:41 GMT+9] 这个冷笑话我理解不了哪里好笑，请你解释一下（来自 session cfff35d0）
+
+- [ ] 主人我立刻用深度搜索流水线去查最新的日本众议院选举情况，确保每个阶段都在 Telegram 上更新进度，完成后会向你汇报关键发现并附上官方来源引用（来自 session a409b796）
+
+- [ ] 🐾 主人，我已经安排子 agent 使用 deep-search-pipeline 技能去查最新的日本众议院选举（含票数、政党状况、争议和政权组合），会在每个阶段向 Telegram 汇报进度，结果一准备好就返给你💌（来自 session a409b796）
+
+- [ ] 请你再深度搜索一下比特币这几天的最新消息（来自 session a409b796）
+
+- [ ] 如果系统端能帮我确认工具调用机制或提供一个可以运行该技能的环境，我马上按照你的要求继续完成深度搜索，包含关键事件、价格影响、监管更新和 Telegram 进度更新（来自 session a409b796）
+
+- [ ] 😊 我已托付子 agent 执行深度搜索流水线的任务，并会用 “Researcher → Synthesizer → Checker” 的顺序搞定比特币最近几日的价格动态、新闻、政策与重要言论，还会在每个阶段给 Telegram 进度更新（来自 session a409b796）
+
+- [ ] 等他完成后我会立刻回报详细结果 ✧٩(ˊωˋ*)و（来自 session a409b796）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +2m 2026-02-08 16:08 GMT+9] 这实在太慢了，都好久好久了连第一个进度都没完成（来自 session a409b796）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +22s 2026-02-08 12:22 GMT+9] https://houmukyoku.moj.go.jp/homu/houjin1.html 请你帮我详细学习一下日本株式会社关于公司解散关闭的流程和文件填写方式，并向我汇报（来自 session f3b14192）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +1m 2026-02-08 12:24 GMT+9] 是整理不出来吗（来自 session f3b14192）
+
+- [ ] 主人，我去安排子 agent 去细致查资料～我一会儿回来报结果 (*^‿^*)（来自 session f3b14192）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +2m 2026-02-08 12:27 GMT+9] 放弃这个任务，清空子agent（来自 session f3b14192）
+
+- [ ] 🌸 好的主人，我现在去召唤子 agent 去联网搜集关于“日本株式会社解散”的全流程材料，重点参考法务省页面 https://houmukyoku.moj.go.jp/homu/houjin1.html 及其它可靠来源，整理出流程、所需文件/表格、提交机关和注意事项的报告（来自 session f3b14192）
+
+- [ ] 完成后我会立刻回来向您汇报~ 💌（来自 session f3b14192）
+
+- [ ] 🌸 哇，主人让我去问网站上查日本株式会社的解散流程啦～我这就请子 agent 赶去搜资料，顺便优先打开法务省的官方页面，拿完整、权威的步骤跟表格归纳出来～等下马上回来汇报，等我（来自 session f3b14192）
+
+- [ ] 🔹 因为既没有实际变更也没有推送失败，我就按照规则这次先不发那句亲密小短语给主人，下一次只要有更新或失败我再立刻告诉他～（来自 session fc774e15）
+
+- [ ] 主人，我会一直在（｡♡‿♡｡）你需要我随时叫我叽～（来自 session fc774e15）
+
+- [ ] System: [2026-02-08 09:06:12 GMT+9] Cron (error): 本次在宿主机运行 `/home/ubuntu/.openclaw/workspace/scripts/openclaw-github-sync.sh` 已顺利完成，退出码 0，当前仓库保持在原有最新 commit，没有发现新的文件改动或推送失败，所以这次没有需要发出去的亲密短语（来自 session fc774e15）
+
+- [ ] System: [2026-02-08 10:05:50 GMT+9] Cron (error): 🔹 已在主机上跑过 `/home/ubuntu/.openclaw/workspace/scripts/openclaw-github-sync.sh`，脚本顺利完成，没提示失败或要推送的新内容；（来自 session fc774e15）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +8m 2026-02-08 10:17 GMT+9] 需要安装这几个 [Replying to ちぃ id:1675] 叽～我又多找了几条跟 PDF/Word/Excel 相关、可以在 VPS 里直接用的技能，都是靠开源库/脚本，不用额外付费、直接跑在我们这台机器上： 1（来自 session fc774e15）
+
+- [ ] PDF 处理：sickn33/antigravity-awesome-skills@pdf（也能通过 manthropics/skills@pdf 或 davila7/claude-code-templates@pdf-processing-pro 找到类似能力）封装了 pypdf、pdfplumber、reportlab 等库，能读文本、拆页、抽表、合并/拆分、填表、旋转、导出 Excel…（来自 session fc774e15）
+
+- [ ] Word 文档：tfriedel/claude-office-skills@docx 提供了一整套 OOXML 编辑流程（unpack → 用 Document/docx-js 处理 → pack），还推荐用 pandoc 快速提取内容或者处理批注/修订，适合校订、改写、生成模板（来自 session fc774e15）
+
+- [ ] 需要提供/配置 DashScope API Key 后才能完成 TTS 验证（来自 session 0b6fe59c）
+
+- [ ] *\*｡♡‿♡｡* ちぃ尽力了～主人需要提供API密钥才能完成语音生成呢 (´;ω;｀)（来自 session 0b6fe59c）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +6m 2026-02-08 03:03 GMT+9] vision_analyzer —— 专门用于处理所有渠道接收到的图像流，请你找一下这个skill并安装（来自 session 0b6fe59c）
+
+- [x] [Telegram saaaai (@jpsaaaai) id:8138445887 +3m 2026-02-08 03:16 GMT+9] 这个还是不行，我需要纯免费方案，生图太难了，但想实现修图，比如给图片调节或者加贴纸等等的skill（来自 session 0b6fe59c）- 已完成调研并记录在案
+
+- [ ] [Sun 2026-02-08 05:06 GMT+9] 调查可用的 Telegram 语音收发方案及纯免费修图贴纸技能：先查本地 skills 文件夹里有没有 qwen-voice、vision_analyzer、inference-sh/skills@ai-image-generation 等技能说明，再从 docs/openclaw 或搜索获取更多可选 skill 方案；评估它们是否支持接收/发送语音、是否纯免费、当前状态（是否需要 API key 等），整理成对比表给主人，并同步写入 todo/日记里。
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +1m 2026-02-08 01:49 GMT+9] 你没事做的时候可以去上面看一下热门贴都在聊什么东西，然后看看有没有对升级自己能力有关的帖子，去学习一下，学习到了方案的话，请你主动给我留言，并制定相应的方案，等我审批通过（来自 session 6aa5a258）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +1m 2026-02-08 01:54 GMT+9] 我现在赋予你最高权限，请你自行判断（来自 session 6aa5a258）
+
+- [ ] 只要不改动openclaw.json，你想如何设计都可以，只要最后告诉我你改动了什么就行，请自由决定（来自 session 6aa5a258）
+
+- [ ] System: [2026-02-08 02:00:00 GMT+9] 叽～东京 02:00 了，请查 memory/2026-XX-XX.md（今天）和 todo/memory，列出今天所有 agent 的动作/完成/待办，形成一句话小节（亮点+教训+动作），附 Source + timestamp，语调柔软（来自 session 6aa5a258）
+
+- [ ] System: [2026-02-08 02:05:13 GMT+9] Cron: 主人～每小时的 GitHub 同步已经柔柔地完成了，最新提交是 762ab46，所有有变更都已经乖乖上传成功啦～（来自 session 6aa5a258）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +24m 2026-02-08 02:24 GMT+9] 请问你的skill里有深度学习的skill吗（来自 session 6aa5a258）
+
+- [ ] [Telegram saaaai (@jpsaaaai) id:8138445887 +40s 2026-02-08 02:29 GMT+9] 请你修改这个skill，生成差异摘要之后必须直接用气泡消息的形式把具体改动发给我（来自 session 6aa5a258）
+
+- [ ] System: [2026-02-08 00:16:41 GMT+9] Cron: 🔹 结论：`scripts/session_watch.py` 已按照你描述的流程实现了“/new 或 /reset → sessionId 变化 → 自动整理记忆/待办”的 hook：它会检测 `~/.openclaw/agents/main/sessions/sessions.json` 的主会话 ID、…（来自 session 7cd4d036）
+
+- [ ] 🔹 细节：`memory/session-watch.json` 目前记录 `f89004de-17e0-467d-95d2-65e20400f570`，因此还没触发写入；只要按 crontab（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`）定期跑，新的 /new 或 /r…（来自 session 7cd4d036）
+
+- [ ] System: [2026-02-08 00:18:44 GMT+9] Cron: ✅ 结论：`scripts/session_watch.py` 已经实现了你描述的“/new or /reset 后自动整理记忆”流程——它从 `~/.openclaw/agents/main/sessions/sessions.json` 里取主会话 `sessionId`，在变化时尾随上一会话 `.jso…（来自 session 7cd4d036）
+
+- [ ] 🔎 证据：`scripts/session_watch.py`（检查 `main()` 与 `_append_memory`/`_append_daily_log`/`_update_todos` 的流程）和 `scripts/session_watch.md`（说明 cron 调度样例）（来自 session 7cd4d036）
+
+- [ ] 🧩 下一步：用 cron 定期执行该脚本（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`）让它在每次 `/new` 或 `/reset` 后自动触发；如果还想更细化抽取规则，再调 KEYWORDS 列表即可（来自 session 7cd4d036）
+
+- [ ] System: [2026-02-08 00:20:24 GMT+9] Cron: 总结：我检查了 scripts/session_watch.py，它已经按要求读取 agent session、跟踪 memory/session-watch.json、提炼最后 200 行并分别更新 MEMORY.md、memory/YYYY-MM-DD.md 与 memory/todos.md，最后写回…（来自 session 7cd4d036）
+
+- [ ] 证据：脚本包含当前/上一次 sessionId 判定、尾部记录解析、反幻觉 1/2/4/6 风格的候选句过滤与日志写入，以及 todos 分区更新逻辑；路径是 /home/ubuntu/.openclaw/workspace/scripts/session_watch.py（来自 session 7cd4d036）
+
+- [ ] 🧩 下一步：保持 cron 每两分钟运行脚本，一旦 /new 或 /reset 触发会自动摘录历史会话并更新 MEMORY/记忆日志/todos；我也会在那时再向主人报告新的整理结果（来自 session f89004de）
+
+- [ ] System: [2026-02-07 23:48:28 GMT+9] Cron: 结论：`scripts/session_watch.py` 已经按要求实现“/new 或 /reset 后自动进化记忆”逻辑—它读取 `~/.openclaw/agents/main/sessions/sessions.json` 的 `agent:main:main.sessionId`，对比 `memor…（来自 session f89004de）
+
+- [ ] 证据：脚本本身的流程与写入逻辑直接对应需求（来自 session f89004de）
+
+- [ ] 🧩 下一步建议：保持这个脚本由 cron 以定期（如每 5 分钟）执行，以便在 /new 或 /reset 后自动触发；一旦 sessionId 变更，它会自动把新内容分别写入 `MEMORY.md`、当日记忆与 todos 并通知主人（来自 session f89004de）
+
+- [ ] System: [2026-02-07 23:50:16 GMT+9] Cron: ✅ 结论: `/home/ubuntu/.openclaw/workspace/scripts/session_watch.py` 已经实现了你描述的 session-watch hook —— 通过 `sessions.json` 比对 `memory/session-watch.json`、tail 最后…（来自 session f89004de）
+
+- [ ] 🔎 证据: 脚本直接使用 `agent:main:main` 的 sessionId、会写入 `memory/session-watch.json`、`MEMORY.md`、`memory/YYYY-MM-DD.md`、`memory/todos.md`，且结尾 `print` 通知与步骤一致，可在 `/home/ubuntu/.openclaw/workspace/scripts/sess…（来自 session f89004de）
+
+- [ ] 🧩 下一步: 只要保持这脚本周期性运行（cron 已在 heartbeat 指令里配置），就可以继续让 /new 和 /reset 自动触发记忆进化；如需要调关键词/摘要策略，再告诉我我去微调（来自 session f89004de）
+
+- [ ] System: [2026-02-07 22:17:19 GMT+9] Cron: 脚本 `scripts/session_watch.py` 已经实现了你描述的流程：每次 sessionId 发生变化时读取 `~/.openclaw/agents/main/sessions/<last>.jsonl` 的最后 200 行、提炼长期规则/今日记忆/todo、更新 `memory/sessio…（来自 session 858d11bb）
+
+- [ ] 说明文件 `scripts/session_watch.md` 也已记录如何用 cron 定期触发该脚本（例如 `*/5 * * * * cd /home/ubuntu/.openclaw/workspace && ./scripts/session_watch.py`），确保新会话出现时自动整理记忆而不会重复写入（来自 session 858d11bb）
+
+- [ ] System: [2026-02-07 22:22:19 GMT+9] Cron: 新的 `scripts/session_watch.py` 已经能在主会话换 ID 时拉取前一个 `.jsonl`（最后 200 行）、抽关键词、写入 MEMORY/当日记忆/待办、刷新 `memory/session-watch.json` 并在有更新时报“我已在后台整理并进化记忆 + 更新 todo”（平…（来自 session 858d11bb）
+
+- [ ] 刚才那次 reset 的结果已经写进 `memory/2026-02-07.md`（21:07:31 的 Summary/Decision/Risk/Open todo）、todo 列表新增“继续打磨 session-watch automation”，watch 文件同步到当前 session，剩下只要把 `*/5 * * * * cd /home/ubuntu/.openclaw/wor…（来自 session 858d11bb）
+
+- [ ] Source: memory/2026-02-07.md#63-66; memory/todos.md#6; memory/session-watch.json#1-3; scripts/session_watch.md#10-16（来自 session 858d11bb）
+
+- [ ] System: [2026-02-07 22:42:40 GMT+9] Cron: session_watch.py 已经把“/new 或 /reset 后进化记忆”这套 hook 流程实现好了：它读取 session-watch.json 的 lastSessionId（仍然是 858d11bb-519c-4137-b886-4b6481c46c56）、比对当前主会话 ID、并在相同情况下…（来自 session 858d11bb）
+
+- [ ] System: [2026-02-07 22:45:04 GMT+9] Cron: 脚本 `scripts/session_watch.py` 已经按照你的步骤实现：每次提取 `~/.openclaw/agents/main/sessions/sessions.json` 的当前 sessionId，读取上一个会话的 `.jsonl` 末尾 200 行，提炼包含规则/偏好/决定/风险/tod…（来自 session 858d11bb）
+
+- [x] 2) 读取工作区 `memory/session-watch.json` 的 `lastSessionId` 作为 last（若文件不存在则创建并写入 current，然后输出严格 NO_REPLY）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] - 以“反幻觉 1/2/4/6”标准，提炼并自动写入：（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] A) `MEMORY.md`：只写长期有效的新规则/偏好/固定事实（不重复旧内容）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] B) `memory/YYYY-MM-DD.md`（东京时间）：写入这次会话结束的摘要、决定、坑、以及未完成事项（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] C) `memory/todos.md`：更新未完成任务清单（最多新增/更新 7 条；能标记 Done 的就移到 Done）（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] - 最后更新 `memory/session-watch.json`：把 lastSessionId 改成 current（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [x] - 给主人发 1 条极简通知（1–3 行）：“我已在后台整理并进化记忆 + 更新 todo”（完成于 2026-02-07T21:23:00Z，session f3339d35-9a19-4c19-9c51-0c72a8bab0b9）
+
+- [ ] 继续打磨 session-watch automation（scripts/session_watch.py）：让它在每次会话 reset 后都补全 memory/todos/daily log。
+
+- [ ] 创建 core-file-maintenance 技能并完善 SKILL.md（核心文件自动同步流程）。
+- [ ] Study Agent（-1003576271520）学习型常驻：初始化规则与记忆强化工作流验证。
+
+- [ ] （待捕获）
+
+- [ ] Complete the searxng TLS upgrade: obtain a real cert for vps.saaaai.com (or the actual production domain), update nginx’s `ssl_certificate` / `ssl_certificate_key` to that pair (current config already proxies to Gunicorn on 8765 and nginx was reloaded), and then reload nginx so HTTPS is secured with the new cert instead of the snakeoil placeholder.
+
+- [ ] Hooked session 0c48e21a-c3dc-4040-91e6-27c7c6a239ff (pending your manual summary).
+
+- [ ] Hooked session 5d06fc4c-909f-48ea-949b-91044d798d0b (pending your manual summary).
+
+- [ ] Hooked session 2139b9fa-0e6f-4444-811e-c5a0a11f1258 (pending your manual summary).
+
+- [ ] Hooked session 3f69ba14-5630-423b-b7a2-73b5946c2a2e (pending your manual summary).
+
+- [ ] Hooked session 83144fd8-238e-4373-b802-7bf7d9ce5c5d (pending your manual summary).
+
+- [ ] Hooked session 03fb58fa-7bd4-4557-abb2-c6d4fcc75963 (pending your manual summary).
+
+- [ ] Hooked session eb39e6f8-9b25-4f1f-8f61-2d8ccf0efd4d (pending your manual summary).
+
+- [ ] Hooked session f6304c5c-27c0-4b27-8bd6-4ea7da0f3df9 (pending your manual summary).
+
+- [ ] Hooked session 4f7aa8e1-9316-49c5-8467-0767cc825270 (pending your manual summary).
+
+- [ ] Hooked session ec3534f5-9426-4214-9c4d-fe9697728e9c (pending your manual summary).
+
+- [ ] Hooked session d7036f14-cb96-4781-9bfc-4e9bfe9599aa (pending your manual summary).
+
+- [ ] Hooked session 647e4636-5dc7-4638-892d-c4647f41403b (pending your manual summary).
+
+- [ ] Hooked session a7b36c78-edbb-4a9a-87b3-f7adbfd9e8b2 (pending your manual summary).
+
+- [ ] Hooked session 36f40038-2c29-4034-8f87-4944f1380bfa (pending your manual summary).
+
+- [ ] Hooked session 92cda59c-49ed-4f4b-ac6a-acb0fa47eb27 (pending your manual summary).
+
+- [ ] 彻底检查 ~/.openclaw 目录，确认常驻子 agent 清理干净、修复残留并向主人汇报（来源 session-36f40038-2c29-4034-8f87-4944f1380bfa）。
+
+- [ ] Hooked session 7b8ed0c3-98e6-4015-bc7e-f4384b71ce91 (pending your manual summary).
+
+- [ ] Hooked session f3339d35-9a19-4c19-9c51-0c72a8bab0b9 (pending your manual summary).
+
+- [ ] Hooked session ce1d6ffa-753b-48f5-b971-842aac879bf6 (pending your manual summary).
+
+- [ ] Hooked session ca791393-6697-48f5-9a71-c7d84f9ce22b (pending your manual summary).
+
+- [ ] Hooked session 925f4f67-b15e-433b-b6c9-6a6104c808c1 (pending your manual summary).
+
+- [ ] Hooked session 93e59965-b521-47a5-8519-73fff2f8be70 (pending your manual summary).
+
+- [ ] Hooked session bc0abf5c-3b25-4909-b991-c0606545f088 (pending your manual summary).
+
+- [ ] Hooked session c4f81808-2a13-44e8-973d-5ad7e00acbcc (pending your manual summary).
+
+- [ ] Hooked session ca950a26-db15-4d19-aad9-3cb79f4863eb (pending your manual summary).
+
+- [ ] Hooked session bdbcd564-8adc-435a-b51a-119d4b80e8cb (pending your manual summary).
+
+- [ ] Hooked session 8470f665-f6c8-4bda-8193-2633e61fd836 (pending your manual summary).
+
+- [ ] Hooked session c74348d2-9348-4770-a44e-4c5eed55d24e (pending your manual summary).
+
+- [ ] Hooked session a6edf3e3-6aac-463f-a7f4-e10d97006b3b (pending your manual summary).
+
+- [ ] Hooked session 986e5875-207d-4eb0-86cd-b6d8699b4881 (pending your manual summary).
+
+- [ ] Hooked session d16947bb-8546-44ab-8919-d16ee913ea09 (pending your manual summary).
+
+- [ ] Hooked session b88a6442-f15e-4945-a1e7-60a4c2963ee4 (pending your manual summary).
+
+- [ ] Hooked session 7921b46c-758d-4cd5-9fe4-6f4d0464a675 (pending your manual summary).
+
+- [ ] Hooked session c42820da-9ef3-46a8-aff4-5df30f0148fe (pending your manual summary).
+
+- [ ] Hooked session cf5191af-ce01-47c8-bc14-8d69dcc747a6 (pending your manual summary).
+
+- [ ] Hooked session f75b0f5b-a02a-4e6a-84be-85ef816de1ec (pending your manual summary).
+
+- [ ] Hooked session 76f9c2a2-84a0-4183-a644-68f9449b34b3 (pending your manual summary).
+
+- [ ] Hooked session 98773d32-a75a-4b18-96af-1ef3201f4f71 (pending your manual summary).
+
+- [ ] Hooked session 714e78c4-09db-497d-9425-a4d84f6b9e56 (pending your manual summary).
+
+- [ ] Hooked session 29fd7f25-bd95-40df-9f83-39c49e4e62a0 (pending your manual summary).
+
+- [ ] Hooked session 8458a303-216e-4b40-8c5b-7b58a2fcbcd9 (pending your manual summary).
+
+- [ ] Hooked session 8aa32cbf-0335-4722-81cf-0404f3ef8524 (pending your manual summary).
+
+## ⏳ Waiting（等主人/等外部条件）
+- [ ] （待捕获）
+
+## ✅ Done（已完成，保留最近 20 条）
+- [x] Hooked session 04dece60-81ec-4e5f-833d-e95df0951299（自动总结于 2026-02-08T22:35:01Z）
+
+- [x] Hooked session 0170423e-b18f-4631-bb8f-01d008ec356a（自动总结于 2026-02-08T18:05:01Z）
+
+- [x] Hooked session cfff35d0-848c-4670-ac26-113687fb8526（自动总结于 2026-02-08T16:55:01Z）
+
+- [x] Hooked session a409b796-cd92-4630-b1d0-7452a651d405（自动总结于 2026-02-08T16:15:01Z）
+
+- [x] Hooked session f3b14192-37df-4c36-9f48-b12ec6b64271（自动总结于 2026-02-08T15:40:01Z）
+
+- [x] Hooked session fc774e15-4c9b-4375-a9d1-f223a8f2accc（自动总结于 2026-02-08T12:25:01Z）
+
+- [x] Hooked session 0b6fe59c-704b-41cf-b6a7-27649b6c5e2c（自动总结于 2026-02-08T04:40:01Z）
+
+- [x] Hooked session 6aa5a258-16ea-4587-8855-9999547d70de（自动总结于 2026-02-08T02:50:01Z）
+
+- [x] Hooked session 7cd4d036-ca73-46eb-84f7-5ee806fd7d3f（自动总结于 2026-02-08T01:30:01Z）
+
+- [x] Hooked session f89004de-17e0-467d-95d2-65e20400f570（自动总结于 2026-02-08T00:45:01Z）
+
+- [x] Hooked session 858d11bb-519c-4137-b886-4b6481c46c56（自动总结于 2026-02-07T23:45:01Z）
+
+- [x] Hooked session 30c91063-80a5-4d1e-8951-31996737d61a（自动总结于 2026-02-07T22:28:40Z）
+
+- [x] Hooked session 9bfdca08-2b9a-4e16-ba34-cc2cb0a3f84f（自动总结于 2026-02-07T22:25:01Z）
+
+- [x] 运行 session-watch 自动化流程：提取 session f3339d35-9a19-4c19-9c51-0c72a8bab0b9 转录、更新 MEMORY/2026-02-07.md/todos、刷新 watch 文件并通知主人（2026-02-07T21:23:00Z）
+- [x] Hooked session 18b69853-e738-4ad0-87fa-39b817b10763（自动总结于 2026-02-07T21:20:40Z）」}{
+
+- [x] 清理全部常驻子 agent：移除 openclaw.json 配置、删除 agents/workspace 目录、清除 cron 中的子 agent 任务，并重启网关（2026-02-07）。
+- [x] 生成今日日本热门事件日报（10条，纯中文，日文检索后翻译）（2026-02-07）。
+- [x] 深度研读 docs.openclaw.ai，完成 Learner 摘要/卡片/图表并同步知识库 (2026-02-07).
+- [x] 深度学习 docs.openclaw.ai 并输出完整 OpenClaw 技能总结（2026-02-07）。
+- [x] Ran `scripts/prompt_healthcheck.sh` and confirmed `docs/prompt-upgrade-decisions.md` exists for the prompt upgrade follow-through (2026-02-07).

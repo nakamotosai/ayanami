@@ -1,0 +1,12 @@
+*** Begin Patch
+*** Add File: config/gateway/persistent-agents.yaml
++agents:
++  - name: {{AGENT_NAME}}
++    always_on: true
++    workspace: {{WORKSPACE_PATH}}
++    bindings_file: {{BINDINGS_FILE}}
++    gateway_rules:
++      - type: inbound
++        channel: telegram
++        target: {{TELEGRAM_ID}}
+*** End Patch

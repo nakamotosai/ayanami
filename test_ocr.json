@@ -1,0 +1,7 @@
+{
+  "tool": "extract_text_from_image",
+  "params": {
+    "image_path": "/tmp/line-media-599888580492132558-1770392762456.jpg",
+    "language": "chi_sim+eng"
+  }
+}

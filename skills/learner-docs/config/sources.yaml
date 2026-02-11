@@ -1,0 +1,5 @@
+sources:
+  - name: docs-openclaw
+    sitemap: https://docs.openclaw.ai/sitemap.xml
+    max_pages: 30
+    note: 官方文档站点，按 sitemap 抓取前 30 篇。

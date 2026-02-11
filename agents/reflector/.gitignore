@@ -1,0 +1,77 @@
+# Secret files and tokens
+*.env
+*.key
+*.pem
+*.p12
+*.jks
+*.pfx
+*.crt
+*.p7b
+*.p7s
+*.der
+config.json
+settings.json
+secrets.json
+private.json
+tokens.json
+*.secret
+
+# Private keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# API keys and credentials
+api_key.txt
+credentials.txt
+*.token
+auth.json
+
+# Temporary and cache files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+node_modules/
+.cache/
+
+# Log files
+*.log
+logs/
+
+# Database files
+*.db
+*.sqlite
+*.sql
+databases/
+
+# Large files (over 10MB)
+*.mp4
+*.avi
+*.mov
+*.zip
+*.tar
+*.gz
+*.dmg
+*.exe
+*.iso
+*.bin
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

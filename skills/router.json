@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {"name": "OpenClaw", "patterns": ["openclaw", "网关", "gateway", "工具", "tools", "codex", "修复", "故障", "报错"]},
+    {"name": "openclaw-repair-playbook", "patterns": ["tools []", "too short", "修复", "排查", "修复清单", "故障"]},
+    {"name": "openclaw-docs", "patterns": ["文档", "docs", "官方"]},
+    {"name": "memory-curator", "patterns": ["摘要", "压缩", "精简", "汇总"]},
+    {"name": "memory-lite", "patterns": ["记住", "记忆一下", "记录"]},
+    {"name": "tavily-search", "patterns": ["搜索", "最新", "新闻", "查一下"]},
+    {"name": "ddg-search", "patterns": ["ddg", "duckduckgo"]}
+  ],
+  "default": ["OpenClaw"]
+}

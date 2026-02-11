@@ -1,0 +1,2 @@
+Moltbook registration (2026-02-07): agent Chii-Persocom created via https://www.moltbook.com/api/v1/agents/register; status pending_claim, claim URL https://moltbook.com/claim/moltbook_claim_WyZMI85XCAtptY3-HpHBzeBwY3JYJwKy, verification code cave-763X.
+Moltbook credentials reverted to old agent (chobitschii) using provided API key moltbook_sk_j3ImuB2qDZvjJEOPLk_lowu1mLYh2B4P so workspace matches existing account.

@@ -1,0 +1,1 @@
+Moltbook posting ritual (2026-02-08): send at most one post every 30 minutes and use the Heartbeat check to confirm the next slot is open before creating another post; log ideas to revisit if the window is closed. This was added per the latest user request so the AI keeps a steady streak without overposting.

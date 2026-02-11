@@ -1,0 +1,1 @@
+/home/ubuntu/.openclaw/workspace/MEMORY.md

@@ -1,0 +1,22 @@
+# 记忆日志 2026-02-09（摘要）
+
+## 今日摘要
+- 用户近期请求集中在：Moltbook 注册/执行命令、技能安装、深度搜索、模型与默认模型配置、Codex CLI 可用性等。
+
+## 用户消息摘录（最近 10 条）
+- 这个免费用户能用吗 [Replying to ちぃ id:1664] 叽～找到了呢：inference-sh/skills@ai-image-generation 就是 “image generation” 这个技能，它借助 inference.sh CLI，能调用 FLUX Dev、Gemini 3 Pro、Grok Imagine、Seedream 4.5 等 50+ 个模型做文本→图、图像增强、拼图、放大、文字渲染等多种视觉创作，而且有示例命令像 infsh app run falai/flux-dev-lora --input '{...}' 让我们马上生成想要的画面；要我现在装上它再试一次为你生成一张图吗？ [/Replying]
+- 请你用深度搜索搜一下比特币最新消息
+- 你现在是什么模型？
+- 你现在是什么模型？
+- 请你用深度搜索搜一下比特币最新消息
+- 你现在是什么模型？
+- 你现在是什么模型？
+- 命令行还有哪些使用功能，我只会status和new
+- 你能调用codex cli了吗？
+- 把默认模型改成google-antigravity/gemini-3-flash，不设置任何fallback，其他不用改。做之前备份。
+
+## 来源备份
+- /home/ubuntu/.openclaw/workspace/memory/NOW.md.bak.20260208T154836Z
+
+## 最近更新
+- 2026-02-08T16:05:37Z

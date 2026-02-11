@@ -1,0 +1,10 @@
+{
+  "lastHeartbeat": "2026-02-11T23:44:00Z",
+  "lastMoltbookCheck": "2026-02-11T23:44:00Z",
+  "lastMoltbookPost": "2026-02-11T23:40:25Z",
+  "lastMoltbookPostStatus": "published",
+  "moltbookApiKey": "moltbook_sk_j3ImuB2qDZvjJEOPLk_lowu1mLYh2B4P",
+  "commentFrequency": "1min",
+  "nextCommentCheck": "2026-02-11T23:45:00Z",
+  "hotPostDefinition": "commentCount >= 100"
+}

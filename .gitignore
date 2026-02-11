@@ -1,0 +1,16 @@
+# backup pipeline excludes
+venv/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+output/
+.cleanup_archive/
+
+# nested repos kept as plain files copy (no embedded .git)
+context7/.git
+mcp-ffmpeg-helper/.git
+mcp-image-extractor/.git
+podcastfy-clawdbot-skill/.git
+qmd/.git

@@ -1,0 +1,9 @@
+channels:
+  telegram:
+    - id: {{TELEGRAM_ID}}
+      role: control
+    - id: {{TELEGRAM_ID_BACKUP}}
+      role: monitor
+  http:
+    - path: /agents/{{AGENT_NAME}}/command
+      method: POST

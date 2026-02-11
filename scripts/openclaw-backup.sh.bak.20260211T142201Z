@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+BACKUP_DIR="/home/ubuntu/.openclaw/backups"
+TS="$(date -u +'%Y%m%dT%H%M%SZ')"
+HOST="$(hostname -s 2>/dev/null || echo host)"
+OUT="$BACKUP_DIR/openclaw_${HOST}_${TS}.tar.gz"
+LOCK="/tmp/openclaw-backup.lock"
+KEEP="20"
+
+mkdir -p "$BACKUP_DIR"
+
+# Prevent overlapping runs
+exec 9>"$LOCK"
+if ! flock -n 9; then
+  exit 0
+fi
+
+# Create archive (config + workspace + extensions)
+if tar -czf "$OUT" \
+  --exclude=home/ubuntu/.openclaw/workspace/.git \
+  --exclude=home/ubuntu/.openclaw/workspace/.venv \
+  -C / \
+  home/ubuntu/.openclaw/openclaw.json \
+  home/ubuntu/.openclaw/workspace \
+  home/ubuntu/.openclaw/extensions \
+  ; then
+  success=1
+else
+  success=0
+fi
+
+# Retention: keep newest $KEEP
+mapfile -t files < <(ls -1t "$BACKUP_DIR"/openclaw_*.tar.gz 2>/dev/null || true)
+count="${#files[@]}"
+if [ "$count" -gt "$KEEP" ]; then
+  for ((i=KEEP; i<count; i++)); do
+    rm -f "${files[$i]}" || true
+  done
+fi
+
+# Notify Sai via Telegram only on success
+if [ "$success" -eq 1 ]; then
+  NOTIFY_TS="$(date '+%Y/%m/%d %H:%M:%S %Z')"
+  NOTIFY_TARGET="8138445887"
+  OPENCLAW_CLI="/home/ubuntu/.npm-global/bin/openclaw"
+  NOTIFY_MSG="叽~ 主人，我在 ${NOTIFY_TS} 完成了 3-hour backup（${OUT##*/}），最新 20 份都保护好惹，继续开心做事吧~"
+  "$OPENCLAW_CLI" message send --target "$NOTIFY_TARGET" --message "$NOTIFY_MSG" >/dev/null 2>&1 || true
+else
+  echo "[openclaw-backup] backup failed" >&2
+fi

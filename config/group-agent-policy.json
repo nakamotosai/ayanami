@@ -1,0 +1,8 @@
+{
+  "groupAgents": {
+    "soloMode": true,
+    "allowSubagents": true,
+    "defaultWorkspacePrefix": "telegram-<group_id>-workspace",
+    "note": "Telegram group agents run in solo mode but may spawn short-lived subagents for heavy/tool tasks. Persistent subagents are disallowed."
+  }
+}

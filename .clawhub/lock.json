@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1770362554281
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1770397502074
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1770397505653
+    },
+    "proactive-agent-1-2-4": {
+      "version": "1.0.0",
+      "installedAt": 1770397510422
+    }
+  }
+}

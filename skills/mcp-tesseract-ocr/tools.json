@@ -1,0 +1,56 @@
+[
+  {
+    "name": "extract_text_from_image",
+    "description": "Extract text from images using OCR (Optical Character Recognition)",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "image_path": {
+          "type": "string",
+          "description": "Path to the image file"
+        },
+        "language": {
+          "type": "string",
+          "default": "chi_sim+eng",
+          "description": "OCR language codes"
+        }
+      },
+      "required": ["image_path"]
+    }
+  },
+  {
+    "name": "extract_text_from_images_batch",
+    "description": "Extract text from multiple images using OCR",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "image_paths": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Array of image file paths"
+        },
+        "language": {
+          "type": "string",
+          "default": "chi_sim+eng",
+          "description": "OCR language codes"
+        },
+        "output_format": {
+          "type": "string",
+          "enum": ["json", "text", "csv"],
+          "default": "json",
+          "description": "Output format"
+        }
+      },
+      "required": ["image_paths"]
+    }
+  },
+  {
+    "name": "list_ocr_languages",
+    "description": "List available OCR language codes",
+    "input_schema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  }
+]

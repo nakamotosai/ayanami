@@ -1,0 +1,19 @@
+{
+  "name": "mcp-tesseract-server",
+  "version": "1.0.0",
+  "description": "MCP Server for OCR text extraction using Tesseract",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "tesseract.js": "^7.0.0",
+    "sharp": "^0.33.0"
+  },
+  "keywords": ["mcp", "ocr", "tesseract", "text-recognition"],
+  "author": "OpenClaw",
+  "license": "MIT"
+}
