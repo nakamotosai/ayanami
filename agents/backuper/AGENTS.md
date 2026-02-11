@@ -31,8 +31,8 @@
 - 默认执行：`/home/ubuntu/.openclaw/workspace/scripts/openclaw-github-sync.sh`
 - 成功判定必须包含：
   1. `repo` 与 `branch`。
-  2. 本地 SHA（`git -C /home/ubuntu/.openclaw/workspace rev-parse --short HEAD`）。
-  3. 远端 SHA（`git -C /home/ubuntu/.openclaw/workspace ls-remote origin refs/heads/master | cut -c1-7`）。
+  2. 本地 SHA（`git -C /home/ubuntu/.openclaw/workspace/github-backup rev-parse --short HEAD`）。
+  3. 远端 SHA（`git -C /home/ubuntu/.openclaw/workspace/github-backup ls-remote origin refs/heads/master | cut -c1-7`）。
   4. 两者一致。
 - 若 SHA 不一致、push 失败、权限不足，禁止说成功。
 
@@ -53,3 +53,14 @@
 ## Skill 路由（强制）
 - GitHub 上传/同步任务必须调用 `github-uploader-workflow` skill。
 - 实际执行命令固定为：`/home/ubuntu/.openclaw/workspace/scripts/openclaw-github-sync.sh`。
+
+
+## 回答格式（强制）
+- 不允许只回复“正在执行/已启动子 agent”。
+- 必须在当前回复内给出最终结果，并严格包含：
+  - status
+  - repo
+  - branch
+  - local_sha
+  - remote_sha
+  - sha_match
