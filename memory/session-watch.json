@@ -1,8 +1,8 @@
 {
   "lastSessionId": "cdd553d4-ed52-425c-bad2-0e3e2ae52633",
-  "updatedAt": 1770891901,
+  "updatedAt": 1770899101,
   "offsets": {
-    "backuper:262ea538-1b2b-495c-96f1-c0f43fb389e0": 29,
+    "backuper:262ea538-1b2b-495c-96f1-c0f43fb389e0": 39,
     "codex-hard:fdf450da-0fab-4b3f-a5ad-9d63d4354bba": 17,
     "codex-medium:0e97cd54-d81c-4e41-a3ad-18ccff07fe6d": 20,
     "free-worker:ab2acebf-8501-4849-92e0-67abf62ff58e": 9,
@@ -80,7 +80,7 @@
     "backuper:5fb78e30-1700-4f3c-bddd-cee759465de0": 9,
     "backuper:ade47a78-cb93-40ce-8cff-0c99e1509d91": 9,
     "backuper:d89142d5-65ac-494a-b6f8-ce4edad40530": 9,
-    "main:dfb00335-f2a6-4d83-825c-88a305313983": 34,
+    "main:dfb00335-f2a6-4d83-825c-88a305313983": 58,
     "backuper:6258b6a4-3d31-42ae-b3d1-5766850518b7": 9,
     "backuper:5d5fdf11-845a-49f1-b3d2-1125dd9ae5f4": 9,
     "backuper:d97fd27e-5e7f-4424-a230-2b7a696ecc59": 9,
@@ -94,6 +94,10 @@
     "backuper:9b05f982-8f24-4fce-a7e7-1e8167588358": 12,
     "backuper:9def01f0-0a35-477f-b6a4-03b2ed5e92a5": 20,
     "backuper:f1dec5c2-bbe2-4a38-b96f-66a4062b1e76": 14,
-    "backuper:6629a2c4-c7fc-4431-b5f6-0ce6d708fc60": 14
+    "backuper:6629a2c4-c7fc-4431-b5f6-0ce6d708fc60": 14,
+    "backuper:0d01b69b-d091-46cf-ac8e-7d9757b95405": 14,
+    "backuper:60d73acd-d3a4-4633-a4f1-44550b4c913a": 44,
+    "xhs-writer:7a16c71f-82ee-4fdc-946d-536fe1257bb7": 6,
+    "backuper:259c71ee-72d4-45b0-9807-cc7a94c56103": 7
   }
 }
