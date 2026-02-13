@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "qmd": {
+      "command": "qmd",
+      "args": ["mcp"],
+      "env": {}
+    },
+    "searxng": {
+      "command": "node",
+      "args": ["/home/ubuntu/mcp-searxng/index.js"],
+      "env": {
+        "SEARXNG_URL": "http://127.0.0.1:8081"
+      }
+    },
+    "fetch": {
+      "command": "node",
+      "args": ["/home/ubuntu/.openclaw/workspace/mcp-servers/mcp-fetch/index.js"],
+      "env": {}
+    },
+    "github": {
+      "command": "node",
+      "args": ["/home/ubuntu/.openclaw/workspace/mcp-servers/mcp-github/index.js"],
+      "env": {}
+    },
+    "tasks": {
+      "command": "node",
+      "args": ["/home/ubuntu/.openclaw/workspace/mcp-servers/mcp-tasks/index.js"],
+      "env": {
+        "WS_DIR": "/home/ubuntu/.openclaw/workspace"
+      }
+    }
+  }
+}

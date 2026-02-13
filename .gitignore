@@ -1,0 +1,22 @@
+# deps
+node_modules/
+**/node_modules/
+
+# openclaw local metadata
+.clawhub/
+
+# backups
+*.bak
+*.bak.*
+*.bak.before_*
+
+# OS/editor
+.DS_Store
+*.swp
+
+# local env/secrets
+.env
+*.env
+*.env.*
+secrets*.json
+secrets*.env
