@@ -1,69 +1,17 @@
 # Evidence Snapshot
 
-- ts_utc: 2026-02-13T18:02:54Z
+- ts_utc: 2026-02-13T18:11:59Z
 - workspace: /home/ubuntu/.openclaw/workspace
 
 ## Git
 - branch: main
-- head: 592ced7
-- dirty: 13 files
+- head: 8bf1a9e
+- dirty: 1 files
 
 ### Changed Files (tracked diff)
-HEARTBEAT.md
-IDENTITY.md
-TOOLS.md
+memory/evidence/latest.md
 
 ### Untracked (top 50)
-logs/codex/events-20260213-172224.jsonl
-logs/codex/events-20260213-172630.jsonl
-logs/codex/events-20260213-173020.jsonl
-logs/codex/events-20260213-173407.jsonl
-logs/codex/events-20260213-174548.jsonl
-logs/codex/events-20260213-174719.jsonl
-logs/codex/events-20260213-175009.jsonl
-logs/codex/events-20260213-175336.jsonl
-logs/codex/events-20260213-175727.jsonl
-logs/codex/jobs/codex-20260213-175727.json
-logs/codex/jobs/codex-20260213-175727.sh
-logs/codex/last-20260213-172224.md
-logs/codex/last-20260213-172630.md
-logs/codex/last-20260213-173020.md
-logs/codex/last-20260213-173407.md
-logs/codex/last-20260213-174548.md
-logs/codex/last-20260213-174719.md
-logs/codex/last-20260213-175009.md
-logs/codex/last-20260213-175336.md
-logs/codex/last-20260213-175727.md
-logs/codex/run-20260213-171705.log
-logs/codex/run-20260213-171811.log
-logs/codex/run-20260213-172044.log
-logs/search/deep-20260213-171659.log
-logs/search/deep-20260213-171759/search-1.json
-logs/search/deep-20260213-171759/search-2.json
-logs/search/deep-20260213-171759/search-3.json
-logs/search/deep-20260213-171759/urls.txt
-logs/search/deep-20260213-172024/search-1.json
-logs/search/deep-20260213-172024/search-2.json
-logs/search/deep-20260213-172024/search-3.json
-logs/search/deep-20260213-172024/urls.txt
-logs/search/deep-20260213-172211/search-1.json
-logs/search/deep-20260213-172211/search-2.json
-logs/search/deep-20260213-172211/search-3.json
-logs/search/deep-20260213-172211/urls.txt
-logs/search/deep-20260213-172617/search-1.json
-logs/search/deep-20260213-172617/search-2.json
-logs/search/deep-20260213-172617/search-3.json
-logs/search/deep-20260213-172617/urls.txt
-logs/search/deep-20260213-173007/search-1.json
-logs/search/deep-20260213-173007/search-2.json
-logs/search/deep-20260213-173007/search-3.json
-logs/search/deep-20260213-173007/urls.txt
-logs/search/deep-20260213-173354/search-1.json
-logs/search/deep-20260213-173354/search-2.json
-logs/search/deep-20260213-173354/search-3.json
-logs/search/deep-20260213-173354/urls.txt
-logs/search/deep-20260213-174539/search-1.json
-logs/search/deep-20260213-174539/search-2.json
 
 ## QMD
 QMD Status
@@ -75,18 +23,18 @@ Documents
   Total:    28 files indexed
   Vectors:  0 embedded
   Pending:  24 need embedding (run 'qmd embed')
-  Updated:  6m ago
+  Updated:  9m ago
 
 Collections
   daily-logs (qmd://daily-logs/)
     Pattern:  **/*.md
-    Files:    17 (updated 6m ago)
+    Files:    17 (updated 9m ago)
   workspace (qmd://workspace/)
     Pattern:  *.md
-    Files:    7 (updated 45m ago)
+    Files:    7 (updated 55m ago)
   memory (qmd://memory/)
     Pattern:  *.md
-    Files:    4 (updated 59m ago)
+    Files:    4 (updated 1h ago)
 
 Examples
   # List files in a collection
@@ -98,11 +46,11 @@ Examples
 
 ## MCP (mcporter)
 mcporter 0.7.3 — Listing 5 server(s) (per-server timeout: 30s)
-- tasks (2 tools, 0.1s)
 - github (1 tool, 0.1s)
 - fetch (1 tool, 0.1s)
+- tasks (2 tools, 0.1s)
 - searxng (1 tool, 0.2s)
-- qmd (6 tools, 0.5s)
+- qmd (6 tools, 0.6s)
 ✔ Listed 5 servers (5 healthy).
 
 ## Recent Logs (top 20)
