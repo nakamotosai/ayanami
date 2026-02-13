@@ -1,0 +1,52 @@
+[
+  {
+    "title": "【翻訳】生活の鍵を渡さずにAIエージェント「OpenClaw」を ... - note",
+    "url": "https://note.com/masajiro999/n/n83efc9da9eb8",
+    "content": "元記事はJordan Lyall氏による、AIエージェント（OpenClaw/Clawdbot）をセキュリティ最優先で構築するための実践的なガイドです。 以下に、日本語訳および読みやすい記事形式にまとめた内容を作成しました。 【翻訳】生活の鍵を渡さずにAIエージェント「OpenClaw」をセットアップする方法. 著者：Jordan Lyall (@JordanLyall) ..."
+  },
+  {
+    "title": "Rasa（ラサ）とは何か？オープンソースAIチャットボット開発フレームワーク ...",
+    "url": "https://www.issoh.co.jp/tech/details/8262/",
+    "content": "2025/08/17 — 初めてRasaを扱う方でも、このガイドに沿って進めれば環境構築が完了するよう詳しく述べていきます。 事前準備: Pythonインストールと仮想環境（venv）設定などRasa導入前の基本手順を詳しく解説. Rasaを使用 ..."
+  },
+  {
+    "title": "OpenAIのPrompt Engineering Guideでより良い結果を得るプロンプト ...",
+    "url": "https://zenn.dev/zuma_lab/articles/openai-prompt-engineering-guide",
+    "content": "2023/12/01 — OpenAIのPrompt Engineering Guideに記載が無いですが、個人的に使ってるテクニックです。 Markdown記法でタスクを区切る. Azure OpenAI Service のドキュメントでXMLタグとMarkdownについて言及されていました。 使用する ..."
+  },
+  {
+    "title": "Getting Started - OpenClaw",
+    "url": "https://docs.openclaw.ai/start/getting-started",
+    "content": "Fastest chat: open the Control UI (no channel setup needed). Run openclaw dashboard and chat in the browser, or open http://127.0.0.1:18789/ on the gateway host. Docs: Dashboard and Control UI."
+  },
+  {
+    "title": "入门指南 - OpenClaw",
+    "url": "https://docs.openclaw.ai/zh-CN/start/getting-started",
+    "content": "如果 openclaw health 显示\"未配置认证\"，回到向导设置 OAuth/密钥认证——没有它智能体将无法响应。 提示： openclaw status --all 是最佳的可粘贴、只读调试报告。 健康探测： openclaw health （或 openclaw status --deep）向运行中的 Gateway 网关请求健康快照。"
+  },
+  {
+    "title": "ユニコ🦄 AIエージェント開発の人 (@unikoukokun) / Posts / X",
+    "url": "https://x.com/unikoukokun",
+    "content": "【 超重大発表 】 今後、フォロワー数約270万人「くりえみ」さん @kurita__emi と隔週金曜日22時〜定期セミナー！ 前回放送が大好評だったので継続的に、くりえみさんとタッグを組み「分かりやすいAIセミナー」を開催していきます 必ずオプチャにご参加を！（無料） line.me/ti/g2/CNQxvm_V… ユニコ AIエージェント開発の ..."
+  },
+  {
+    "title": "OpenClaw Guide — Your Personal AI Assistant Made Simple",
+    "url": "https://www.getopenclaw.ai/docs",
+    "content": "OpenClaw is an open-source AI assistant framework that connects Claude and other LLMs to your messaging apps. It runs locally on your machine and lets you interact with AI through WhatsApp, Telegram, Discord, iMessage, and more."
+  },
+  {
+    "title": "Foxit PDF SDK for Webを使用してカスタムフォームフィールドを作成 ...",
+    "url": "https://hackernoon.com/lang/ja/Foxit-PDF-SDK-for-Web%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89",
+    "content": "Nov 17, 2023 ... ... チュートリアルでは、Foxit PDF Library for Webを使用 ... 使用される PDF ドキュメントは、SDK に含まれるドキュメントのデモ ガイドです。"
+  },
+  {
+    "title": "AIにドキュメントを読ませる：OpenClawブラウザ自動化 ...",
+    "url": "https://eastondev.com/blog/ja/posts/ai/20260205-openclaw-browser-skills/",
+    "content": "2026/02/05 — OpenClaw Browser Skillsを使ってAPIドキュメントの自動取得、競合監視、Webコンテンツ抽出を行い、30分の作業を2分で終わらせる方法。完全なコマンドチュートリアルとセキュリティ防護ガイド付き。"
+  },
+  {
+    "title": "🔥🔥🔥玩转OpenClaw｜云上OpenClaw(Clawdbot)最全实践教程合辑-腾讯云开发者社区-腾讯云",
+    "url": "https://cloud.tencent.com/developer/article/2624973",
+    "content": "OpenClaw（原Clawdbot）一夜爆火，本文旨在为大家提供一键部署OpenClaw以及各类场景化的最佳实践，如接入QQ、企微、钉钉、飞书、Discord等，打造专属于自己的私人AI助理！"
+  }
+]

@@ -121,3 +121,15 @@
   - 检索：`bash skills/enhanced-memory/scripts/search.sh "..."`
   - 提炼：在 daily 标记 `[LT]` 后 `bash skills/enhanced-memory/scripts/promote_lt.sh YYYY-MM-DD`
   - 维护：`bash skills/enhanced-memory/scripts/maintain.sh`
+
+## Telegram 私聊记忆自动化（推荐）
+- `skills/telegram-memory-autostore`
+- 每次 heartbeat 会自动运行：
+  - `python3 ~/.openclaw/workspace/skills/telegram-memory-autostore/scripts/capture_and_store.py`
+- 手动触发也可直接跑同一条命令。
+
+## 搜索套件（推荐）
+- `skills/search-suite`
+  - 简易搜索：`bash skills/search-suite/scripts/fast_search.sh "query"`
+  - 强力搜索：`bash skills/search-suite/scripts/deep_search.sh "topic" "q1" "q2" "q3"`
+  - 输出：`memory/research/`

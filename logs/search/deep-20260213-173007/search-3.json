@@ -1,0 +1,52 @@
+[
+  {
+    "title": "jerrylususu/bookmark-collection: What I have read, am reading or will ...",
+    "url": "https://github.com/jerrylususu/bookmark-collection",
+    "content": "Agentic AI's OODA Loop Problem - Schneier on Security #read#llm#security ... The Case for Failure-Tolerant Leaders: Why we need them now #read; Byaidu ..."
+  },
+  {
+    "title": "Can You Run Open Claw on Macbook | TikTok",
+    "url": "https://www.tiktok.com/discover/can-you-run-open-claw-on-macbook",
+    "content": "4 日前 — An Apple Machine like even the MacBook running OpenClaw is such a security nightmare. AVOID using it unless you know what you are doing... #tech ..."
+  },
+  {
+    "title": "How to Use Clawdbot Effectively - TikTok",
+    "url": "https://www.tiktok.com/discover/how-to-use-clawdbot-effectively",
+    "content": "4 日前 — First AI assistant you can run locally or on a VPS. Most people set it up wrong. These 3 security moves stop 90 percent of real attacks."
+  },
+  {
+    "title": "OpenClaw security: Risks, best practices, and a checklist",
+    "url": "https://www.hostinger.com/tutorials/openclaw-security",
+    "content": "Learn OpenClaw security risks and how to secure a self-hosted setup on a VPS with safer ports, firewall rules, isolation, secrets handling, and approvals."
+  },
+  {
+    "title": "Mac Minu Agent Bot - TikTok",
+    "url": "https://www.tiktok.com/discover/mac-minu-agent-bot",
+    "content": "... cases, Clawed Bot features, integrate AI in daily life, how to use ... Andrej Karpathy called it \"a complete mess of a computer security nightmare ..."
+  },
+  {
+    "title": "emudao",
+    "url": "https://x.com/emudao",
+    "content": "如果你Openclaw 安装了，但是不好用，可能你没安装下面三个Skill 技能！ 1，tavily-search 联网技能。不联网跟瞎子一样！先开眼看世界。 ... 2，find-skills 主动找技能解决问题。"
+  },
+  {
+    "title": "OpenClaw 保姆级教程（中）新手必装 5 个稳定设置，照着做，少踩 90% 的坑（附配置文件&教程）",
+    "url": "https://zhuanlan.zhihu.com/p/2002387789141005766",
+    "content": "如果你看完我上一篇《OpenClaw跑了120小时，踩了无数坑总结出的5条必做》一定能感同身受! 它十分强大，思考规划、脏活累活全帮你干它脾气很差，一言不合就崩，无数小坑搞的你心力憔悴它是\"吞金兽\"，一个不小心…"
+  },
+  {
+    "title": "安全性 - OpenClaw",
+    "url": "https://docs.openclaw.ai/zh-CN/gateway/security",
+    "content": "快速检查： openclaw security audit 另请参阅： 形式化验证（安全模型） 定期运行此命令（尤其是在更改配置或暴露网络接口之后）："
+  },
+  {
+    "title": "OpenClaw安全警示：你必须知道的5大风险 · 比邻",
+    "url": "https://eastondev.com/blog/zh/posts/ai/20260204-openclaw-security-risks/",
+    "content": "OpenClaw存在远程代码执行漏洞(CVE-2026-25253)、API密钥泄露、Prompt注入攻击等严重安全问题，ClawHub上12%的Skills为恶意软件。本文详解5大风险及实用防护建议。"
+  },
+  {
+    "title": "OpenClaw Security Risks and Concerns - C# Corner",
+    "url": "https://www.c-sharpcorner.com/article/openclaw-security-risks-and-concerns/",
+    "content": "OpenClaw offers powerful autonomous AI capabilities, but it also introduces serious security, privacy, and governance risks. Learn the key OpenClaw security concerns and best practices enterprises must follow before production use."
+  }
+]

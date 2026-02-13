@@ -1,0 +1,32 @@
+[
+  {
+    "title": "OpenClaw 指南 - 中国 Agent 使用者的实用参考",
+    "url": "https://news-openclaw.smzdm.com/docs",
+    "content": "OpenClaw 文档. 纯中文站点（同步官方仓库 docs/zh-CN ），站内阅读、链接可用。 开始阅读. 推荐从Get started（开始）进入. 进入中文文档→ · Get started（开始）."
+  },
+  {
+    "title": "玩转Openclaw 玩法技巧之搭建一个中国开发者Skills（附带免费白嫖 ...",
+    "url": "https://cloud.tencent.com/developer/article/2628830",
+    "content": "4天前 ... 我对这套OpenClaw + 腾讯云+ 自动化技能包的技术栈做了深度复盘，总结如下：. 优点如下：. 使用腾讯云可以利用它配置好的模板快捷的切换使用的AI模型以及 ..."
+  },
+  {
+    "title": "入门指南 - OpenClaw",
+    "url": "https://docs.openclaw.ai/zh-CN/start/getting-started",
+    "content": "目标：尽快从零到第一个可用聊天（使用合理的默认值）。 最快聊天：打开 Control UI（无需渠道设置）。 运行 openclaw dashboard 并在浏览器中聊天，或在 Gateway 网关主机上打开 http://127.0.0.1:18789/。 文档： Dashboard 和 Control UI。 推荐路径：使用 CLI 新手引导向导（openclaw onboard）。 它设置： 渠道（WhatsApp/Telegram/Discord/Mattermost（插件）/…） 如果你想要更深入的参考页面，跳转到： 向导 、 设置 、 配对 、 安全。"
+  },
+  {
+    "title": "OpenClaw 指南- 中国Agent 使用者的实用参考",
+    "url": "https://news-openclaw.smzdm.com/tips",
+    "content": "... Agent 使用者提供从快速上手到提升易用性的参考支持。当前热门专题：OpenClaw 部署教程、使用技巧、Skills 推荐 ... 基于OpenClaw 官方文档整理· 共11 条技巧."
+  },
+  {
+    "title": "全网最简单的OpenClaw 部署教程，5 分钟拥有你的AI 员工",
+    "url": "https://www.codefather.cn/post/2021126726859362305",
+    "content": "3天前 — 最后再贴一下官方的部署教程，点击阅读原文可以直接跳转。 操作指南：https://cloud.baidu.com/doc/LS/s/6ml9f3cvl. 也欢迎大家多多分享你的OpenClaw 玩法， ..."
+  },
+  {
+    "title": "Awesome OpenClaw Tutorial - GitHub",
+    "url": "https://github.com/xianyu110/awesome-openclaw-tutorial",
+    "content": "从零开始玩转OpenClaw：最全面的中文教程，涵盖安装、配置、实战案例和避坑指南（github版） - xianyu110/awesome-openclaw-tutorial"
+  }
+]

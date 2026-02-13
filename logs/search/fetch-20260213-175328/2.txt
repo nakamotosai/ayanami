@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="zh" munual-autotracker-init="" qct-uid="" qct-pv-id="it9ov-6L8AuGqGIt2BhKf" qct-ip="141.147.154.37" style="background:#ffffff;overscroll-behavior:auto;height:100%"><head><meta charSet="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="format-detection" content="telephone=no"/><title>玩转 Openclaw 玩法技巧之搭建一个中国开发者Skills（附带免费白嫖腾讯云服务器）-腾讯云开发者社区-腾讯云</title><meta name="subject" content="其他-空类-玩转OpenClaw云端创意实践"/><meta name="subjectTime" content="2026-02-09 14:27:53"/><meta name="articleSource" content="O"/><meta name="magicSource" content="N"/><meta name="authorType" content="Z,O"/><meta name="productSlug" content="cvm,tke,tcr"/><meta name="authorUID" content="11328216"/><meta name="keywords" content="Openclaw,腾讯云服务器,AI技能包,自动化任务"/><meta name="description" content="学习搭建中国开发者必备Skills，0元白嫖腾讯云服务器2C2G4M教程。掌握Openclaw自动化玩法，包括热点资讯搜索、国内镜像源配置等实用技能。提供详细部署指南，让AI成为你的高效助手。"/><meta property="og:title" content="玩转 Openclaw 玩法技巧之搭建一个中国开发者Skills（附带免费白嫖腾讯云服务器）-腾讯云开发者社区-腾讯云"/><meta property="og:description" content="学习搭建中国开发者必备Skills，0元白嫖腾讯云服务器2C2G4M教程。掌握Openclaw自动化玩法，包括热点资讯搜索、国内镜像源配置等实用技能。提供详细部署指南，让AI成为你的高效助手。"/><meta property="og:image" content="https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover"/><meta name="referrer" content="unsafe-url"/><link rel="dns-prefetch" href="//qccommunity.qcloudimg.com"/><link rel="dns-prefetch" href="//ask.qcloudimg.com"/><link rel="dns-prefetch" href="//cloudcache.tencent-cloud.com"/><link rel="canonical" href="https://cloud.tencent.com/developer/article/2628830"/><meta name="next-head-count" content="22"/><link rel="stylesheet" href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/gateway/portal/css/base.css"/><link rel="stylesheet" href="https://qccommunity.qcloudimg.com/tvp/tdesign.min.css"/><link rel="stylesheet" href="https://cloudcache.tencentcs.cn/qcloud/ui/cloud-community/build/base/base-202511051801.css"/><style type="text/css">
+        .rno-markdown p * {
+          white-space: pre-wrap;
+          word-break: break-all;
+        }
+        .tea-overlay {
+          z-index: 99999!important;
+        }
+        .cdc-mcp-page2__main.is-fixed .cdc-mcp-page2__toolbar {
+          top: 57px !important;
+        }
+      </style><link rel="stylesheet" href="https://cloudcache.tencentcs.cn/qcloud/ui/cloud-community/build/Article/Article-202510231103.css"/><link rel="stylesheet" href="https://qccommunity.qcloudimg.com/community-editor/katex/releasev0.16.21/katex.min.css"/><link rel="stylesheet" href="https://cloudcache.tencent-cloud.cn/qcloud/draft-master/dist/draft-master-v2.1.28.d4s2ddo9sb.css"/><link rel="stylesheet" href="https://qccommunity-1258344699.cos.ap-guangzhou.myqcloud.com/tc_player/releasev5.1.0/tcplayer.min.css"/><link rel="stylesheet"/><script src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script><script>
+              if (Aegis) {
+                new Aegis({
+                  id: 'dWlmyFvjDnalkbZO8q',
+                  env: 'production',
+                  onError: true,
+                  pagePerformance: true,
+                  reportAssetSpeed: true,
+                  api: {
+                    reportRequest: true,
+                    resHeaders: ['x-req-id'],
+                  },
+                  reportApiSpeed: true,
+                  beforeRequest: function (data) {
+                    // load js failed
+                    if (data.logType === 'log') {
+                      if (data.logs.level === '32' && data.logs.msg.indexOf('google') > -1) return false;
+                    }
+                    var ignoreKeys = [
+                      'Script error',
+                      'chrome-extension',
+                      'qq.com',
+                      'queryWeappQrcodeStatus',
+                      'login/ajax/info',
+                      'woa.com',
+                      'trafficCollect.php',
+                      'google',
+                      'dscache',
+                      'act-api',
+                      'set_qc_cookie',
+                      'opc.cloud.tencent.com',
+                      'uc_gre_ad_buss',
+                      'eb.xcj.pub',
+                      'UCShellJava',
+                      '/developer/labs/quick/loader',
+                      'edgeImmersiveReaderDOM',
+                      'sendBeacon',
+                      'error-decoder.html',
+                      'qcloud-community-track.min.js'
+                    ];
+                    var alarmMsg = [data.logs.url, data.logs.msg].join('|');
+                    for (var i = 0; i < ignoreKeys.length; i++) {
+                      if (alarmMsg.indexOf(ignoreKeys[i]) != -1) return false;
+                    }
+                    if (/bot|wechatdevtools|spider/i.test(navigator.userAgent)) {
+                      return false;
+                    }
+                    if (location.hostname.indexOf('cloud.tencent.') === -1) {
+                      return false;
+                    }
+                  },
+                });
+              }
+    </script><link rel="preload" href="https://qccommunity.qcloudimg.com/community/_next/static/css/3e07e6a5b81e85de.css" as="style"/><link rel="stylesheet" href="https://qccommunity.qcloudimg.com/community/_next/static/css/3e07e6a5b81e85de.css" data-n-p=""/><link rel="preload" href="https://qccommunity.qcloudimg.com/community/_next/static/css/02ddabaaf8f82bc7.css" as="style"/><link rel="stylesheet" href="https://qccommunity.qcloudimg.com/community/_next/static/css/02ddabaaf8f82bc7.css" data-n-p=""/><link rel="preload" href="https://qccommunity.qcloudimg.com/community/_next/static/css/216d37adbb43b189.css" as="style"/><link rel="stylesheet" href="https://qccommunity.qcloudimg.com/community/_next/static/css/216d37adbb43b189.css" data-n-p=""/><link rel="preload" href="https://qccommunity.qcloudimg.com/community/_next/static/css/ef076e5805dc1844.css" as="style"/><link rel="stylesheet" href="https://qccommunity.qcloudimg.com/community/_next/static/css/ef076e5805dc1844.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/webpack-6154aea3b95012b4.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/framework-bae252e255276064.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/main-e22dbace957c19a6.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/pages/_app-69df419f6620efc8.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/1001-a5784a7b6572cf33.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/8737-dc005997ddc7570d.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/5334-925dd179c0b7d3e5.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/2838-7458752cd2e7c742.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/4031-e3e3905dc88f3f92.js" defer=""></script><script src="https://qccommunity.qcloudimg.com/community/_next/static/chunks/8521-0c09c4ae0c5c7

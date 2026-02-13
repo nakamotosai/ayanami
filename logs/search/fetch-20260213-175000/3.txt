@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8" data-next-head=""/><meta content="width=device-width, initial-scale=1" name="viewport" data-next-head=""/><script async="" src="https://www.googletagmanager.com/gtag/js" nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA="></script><title data-next-head="">OpenAIのPrompt Engineering Guideでより良い結果を得るプロンプトエンジニアリングを学ぶ</title><link rel="canonical" href="https://zenn.dev/zuma_lab/articles/openai-prompt-engineering-guide" data-next-head=""/><meta name="twitter:card" content="summary_large_image" data-next-head=""/><meta property="og:url" content="https://zenn.dev/zuma_lab/articles/openai-prompt-engineering-guide" data-next-head=""/><meta property="og:title" content="OpenAIのPrompt Engineering Guideでより良い結果を得るプロンプトエンジニアリングを学ぶ" data-next-head=""/><meta property="og:image" content="https://res.cloudinary.com/zenn/image/upload/s--QMZiSi7N--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenAI%25E3%2581%25AEPrompt%2520Engineering%2520Guide%25E3%2581%25A7%25E3%2582%2588%25E3%2582%258A%25E8%2589%25AF%25E3%2581%2584%25E7%25B5%2590%25E6%259E%259C%25E3%2582%2592%25E5%25BE%2597%25E3%2582%258B%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%2592%25E5%25AD%25A6%25E3%2581%25B6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ZUMA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2o4UGNQSXBZNFlfQ2ZyNnNKTG9EcExtcHBpQUctWm5vNmNIaU9kPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT" data-next-head=""/><meta property="og:type" content="article" data-next-head=""/><meta property="og:site_name" content="Zenn" data-next-head=""/><meta content="https://lh3.googleusercontent.com/a-/AOh14Gj8PcPIpY4Y_Cfr6sJLoDpLmppiAG-Zno6cHiOd=s96-c" name="zenn:image" data-next-head=""/><meta content="ZUMAさんによる記事" name="zenn:description" data-next-head=""/><meta content="Zenn" name="apple-mobile-web-app-title"/><link href="/manifest.json" rel="manifest"/><link href="https://static.zenn.studio/images/logo-transparent.png" rel="shortcut icon" type="image/png"/><link href="https://static.zenn.studio/images/icon.png" rel="apple-touch-icon-precomposed" type="image/png"/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="preload" href="https://static.zenn.studio/_next/static/css/6469a01fd8dfb4ac.css" as="style"/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="preload" href="https://static.zenn.studio/_next/static/css/97f15a0f8ffd0b81.css" as="style"/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="preload" href="https://static.zenn.studio/_next/static/css/a8f93302c6b31b42.css" as="style"/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="preload" href="https://static.zenn.studio/_next/static/css/73149e3adcac36b7.css" as="style"/><script nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=">function getSystemTheme() {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark-blue';
+          }
+          return 'light';
+        }
+        
+        function applyTheme(theme) {
+          let actualTheme;
+          if (theme === 'system') {
+            actualTheme = getSystemTheme();
+          } else {
+            actualTheme = theme;
+          }
+          window.document.documentElement.dataset.theme = actualTheme;
+        }
+        
+        const storedTheme = localStorage.getItem('theme');
+        const theme = storedTheme || 'system';
+        applyTheme(theme);
+        
+        // システムテーマの変更を監視
+        if (window.matchMedia) {
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+            const currentTheme = localStorage.getItem('theme') || 'system';
+            if (currentTheme === 'system') {
+              applyTheme('system');
+            }
+          });
+        }</script><script nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=">var newDataLayer = {};
+
+        // display_modeを追加
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+          newDataLayer.display_mode = 'standalone'; // PWA
+        } else if (window.navigator.standalone === true) {
+          newDataLayer.display_mode = 'standalone'; // PWA on iOS Safari
+        } else {
+          newDataLayer.display_mode = 'browser'; // Web
+        }
+
+        // user_idを追加
+        // ページ初期化時に取得したいため、ローカルストレージからcachedUser.idを取得する
+        var zennCurrentUserValue = localStorage.getItem('zenn_current_user');
+        if (zennCurrentUserValue) {
+          try {
+            var currentUser = JSON.parse(zennCurrentUserValue);
+            if (currentUser.cachedUser) {
+              newDataLayer.user_id = currentUser.cachedUser.id;
+            }
+          } catch {}
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(newDataLayer);</script><script nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K42DRM8');</script><script nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=">window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());</script><script src="https://embed.zenn.studio/js/listen-embed-event.js" nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA="></script><style nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=">
+            @font-face {
+              font-family: 'Inter';
+              font-weight: 600;
+              font-display: swap;
+              src: local(''), url('https://static.zenn.studio/fonts/inter-v3-latin-600.woff2') format('woff2');
+            }
+            @font-face {
+              font-family: 'Inter';
+              font-weight: 700;
+              font-display: swap;
+              src: local(''), url('https://static.zenn.studio/fonts/inter-v3-latin-700.woff2') format('woff2');
+            }</style><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="stylesheet" href="https://static.zenn.studio/_next/static/css/6469a01fd8dfb4ac.css" data-n-g=""/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="stylesheet" href="https://static.zenn.studio/_next/static/css/97f15a0f8ffd0b81.css" data-n-p=""/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="stylesheet" href="https://static.zenn.studio/_next/static/css/a8f93302c6b31b42.css" data-n-p=""/><link nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" rel="stylesheet" href="https://static.zenn.studio/_next/static/css/73149e3adcac36b7.css"/><noscript data-n-css="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA="></noscript><script defer="" nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" noModule="" src="https://static.zenn.studio/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script defer="" src="https://static.zenn.studio/_next/static/chunks/63209.0a4ea7372e1b7b15.js" nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA="></script><script src="https://static.zenn.studio/_next/static/chunks/webpack-17ea75b2903812b3.js" nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" defer=""></script><script src="https://static.zenn.studio/_next/static/chunks/framework-9b1c6026dcec1ba1.js" nonce="CgJxrf9CATT8IAepPBC3578wUV56IaR2Infyp8T30fA=" defer=""

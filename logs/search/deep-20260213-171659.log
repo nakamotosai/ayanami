@@ -1,0 +1,156 @@
+[
+  {
+    "title": "【翻訳】生活の鍵を渡さずにAIエージェント「OpenClaw」を ... - note",
+    "url": "https://note.com/masajiro999/n/n83efc9da9eb8",
+    "content": "Feb 5, 2026 ... ... Jordan Lyall氏による、AIエージェント（OpenClaw/Clawdbot）をセキュリティ最優先で構築するための実践的なガイド ... 使用、コマンド ..."
+  },
+  {
+    "title": "OpenClaw Guide — Your Personal AI Assistant Made Simple",
+    "url": "https://www.getopenclaw.ai/docs",
+    "content": "OpenClaw is an open-source AI assistant framework that connects Claude and other LLMs to your messaging apps. It runs locally on your machine and lets you interact with AI through WhatsApp, Telegram, Discord, iMessage, and more."
+  },
+  {
+    "title": "Rasa（ラサ）とは何か？オープンソースAIチャットボット開発フレームワーク ...",
+    "url": "https://www.issoh.co.jp/tech/details/8262/",
+    "content": "Aug 17, 2025 ... 公式ドキュメントやコミュニティフォーラムでは、多数の拡張例やベスト ... Rasa公式も日本語対応のガイドを提供しており、それに沿ってパイプ ..."
+  },
+  {
+    "title": "ユニコ🦄 AIエージェント開発の人 (@unikoukokun) / Posts / X",
+    "url": "https://x.com/unikoukokun",
+    "content": "OpenClawの公式ドキュメントにVoice Call Pluginの解説ページがあって ... ガイド. ステップ1：OpenClawのインストール. まずはOpenClawをローカル ..."
+  },
+  {
+    "title": "Getting Started - OpenClaw",
+    "url": "https://docs.openclaw.ai/start/getting-started",
+    "content": "Fastest chat: open the Control UI (no channel setup needed). Run openclaw dashboard and chat in the browser, or open http://127.0.0.1:18789/ on the gateway host. Docs: Dashboard and Control UI."
+  },
+  {
+    "title": "入门指南 - OpenClaw",
+    "url": "https://docs.openclaw.ai/zh-CN/start/getting-started",
+    "content": "如果 openclaw health 显示\"未配置认证\"，回到向导设置 OAuth/密钥认证——没有它智能体将无法响应。 提示： openclaw status --all 是最佳的可粘贴、只读调试报告。 健康探测： openclaw health （或 openclaw status --deep）向运行中的 Gateway 网关请求健康快照。"
+  },
+  {
+    "title": "AIにドキュメントを読ませる：OpenClawブラウザ自動化 ...",
+    "url": "https://eastondev.com/blog/ja/posts/ai/20260205-openclaw-browser-skills/",
+    "content": "2026/02/05 — OpenClaw Browser Skillsを使ってAPIドキュメントの自動取得、競合監視、Webコンテンツ抽出を行い、30分の作業を2分で終わらせる方法。"
+  },
+  {
+    "title": "🔥🔥🔥玩转OpenClaw｜云上OpenClaw(Clawdbot)最全实践教程合辑-腾讯云开发者社区-腾讯云",
+    "url": "https://cloud.tencent.com/developer/article/2624973",
+    "content": "OpenClaw（原Clawdbot）一夜爆火，本文旨在为大家提供一键部署OpenClaw以及各类场景化的最佳实践，如接入QQ、企微、钉钉、飞书、Discord等，打造专属于自己的私人AI助理！"
+  },
+  {
+    "title": "OpenClaw Guide Docs",
+    "url": "https://aiopenclaw.org/docs",
+    "content": "Learn what is OpenClaw, the viral open-source AI agent. Installation guide, quick start tutorials, WhatsApp & Telegram integrations."
+  },
+  {
+    "title": "Foxit PDF SDK for Webを使用してカスタムフォームフィールドを作成 ...",
+    "url": "https://hackernoon.com/lang/ja/Foxit-PDF-SDK-for-Web%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89",
+    "content": "Nov 17, 2023 ... ... チュートリアルでは、Foxit PDF Library for Webを使用 ... 使用される PDF ドキュメントは、SDK に含まれるドキュメントのデモ ガイドです。"
+  }
+]
+[
+  {
+    "title": "6 OpenClaw Competitors That Are Gaining Ground in 2026",
+    "url": "https://emergent.sh/learn/best-openclaw-alternatives-and-competitors",
+    "content": "Read more about: Emergent Moltbot vs OpenClaw 6 Best OpenClaw alternatives in 2026 OpenClaw sparked interest in autonomous agents, but users now evaluate alternatives based on execution reliability, integration depth, and deployment practicality, not just autonomy demos."
+  },
+  {
+    "title": "Best OpenClaw Alternatives 2026: 9 AI Agents From Lightweight to Enterprise",
+    "url": "https://superprompt.com/blog/best-openclaw-alternatives-2026",
+    "content": "Compare the best OpenClaw alternatives in 2026. From Nanobot (4K lines) to enterprise options, find the right self-hosted AI agent for your needs. Includes NanoClaw, memU, Moltworker, and more."
+  },
+  {
+    "title": "OpenClaw vs. Alternatives: How It Compares to ChatGPT, Local Agents, and Cloud Workflow Platforms (2026)",
+    "url": "https://latenode.com/blog/ai/ai-agents/openclaw-comparison-alternatives",
+    "content": "This article compares OpenClaw to the main alternatives: cloud chatbots (ChatGPT, Claude), other local or self-hosted agents (Jan.ai, AnythingLLM, developer agents like Goose), and cloud workflow automation (including Latenode)."
+  },
+  {
+    "title": "オープンアクセス契約の 類型化と課題 - JPCOAR",
+    "url": "https://jpcoar.repo.nii.ac.jp/record/2000165/files/9-1_monthly_jpcoar.pdf",
+    "content": "2022/06/07 — 2021年から公的助成を受けた研究成果の完全かつ即時OA義務化を⽬標と. し、実現のための10原則「Plan S」を掲げ、世界中の研究助成機関の参.27 ページ·1 MB"
+  },
+  {
+    "title": "5 Best OpenClaw Alternatives for 2026 - AI Credits & Startup Perks: Save up to $7M on 200+ Tools | Get AI Perks",
+    "url": "https://www.getaiperks.com/en/blogs/15-best-openclaw-alternatives",
+    "content": "Looking for OpenClaw alternatives? Compare Manus AI, Claude Code, ChatGPT Agent, Cursor, and n8n - plus how to run each with free AI credits."
+  },
+  {
+    "title": "Top OpenClaw Alternatives for Secure, & Scalable AI Agents (2026)",
+    "url": "https://codeconductor.ai/blog/openclaw-alternatives/",
+    "content": "Looking for OpenClaw alternatives in 2026? This guide breaks down the top platforms for building secure, scalable AI agents, highlighting key features like memory systems, integrations, and enterprise-grade capabilities to help teams evaluate and choose the right solution for production-ready AI workflows."
+  },
+  {
+    "title": "OpenClawをどこで動かす？ 4つの選択肢を比較してみた｜Hiroaki",
+    "url": "https://note.com/major_elk2890/n/n49233b87135d",
+    "content": "1. 自宅PC ── まずはここから · 2. Cloudflare Workers（moltworker）── 期待と現実 · 3. VPS ── 現時点のベストバランス · 4. Mac mini ── もうひとつの最適解."
+  },
+  {
+    "title": "人気エントリー - テクノロジー - 2026年2月11日 - はてなブックマーク",
+    "url": "https://b.hatena.ne.jp/hotentry/it/20260211",
+    "content": "OpenClawのビジネス向け環境構築で考える、AIエージェントの倫理と ... ベストプラクティス」が語られています。 ただ、記事が増えすぎて「結局 ..."
+  },
+  {
+    "title": "The 5 best OpenClaw AI alternatives for 2026 - eesel.ai",
+    "url": "https://www.eesel.ai/blog/openclaw-ai-alternatives",
+    "content": "A video guide on how to actually use OpenClaw, a tool for which many users seek AI alternatives. But going from a tech demo to a reliable, secure assistant that a business can count on is a significant jump. The alternatives we’ve covered here all offer different paths to that future, each with its own advantages and disadvantages. For businesses, a practical path forward is a managed platform that provides the power of autonomy while maintaining the safety, control, and ease of use needed for daily work."
+  },
+  {
+    "title": "OpenClaw AI Not Enough? Try These 10 Powerful Alternatives in 2026",
+    "url": "https://www.cloudvyn.com/blog/openclaw-ai-alternatives",
+    "content": "OpenClaw AI has competition! Explore the top 10 OpenClaw alternatives that automate work better — including free AI agent platforms you can use today."
+  }
+]
+[
+  {
+    "title": "jerrylususu/bookmark-collection: What I have read, am reading or will ...",
+    "url": "https://github.com/jerrylususu/bookmark-collection",
+    "content": "Agentic AI's OODA Loop Problem - Schneier on Security #read#llm#security ... The Case for Failure-Tolerant Leaders: Why we need them now #read; Byaidu ..."
+  },
+  {
+    "title": "Can You Run Open Claw on Macbook | TikTok",
+    "url": "https://www.tiktok.com/discover/can-you-run-open-claw-on-macbook",
+    "content": "4 日前 — An Apple Machine like even the MacBook running OpenClaw is such a security nightmare. AVOID using it unless you know what you are doing... #tech ..."
+  },
+  {
+    "title": "Mac Minu Agent Bot - TikTok",
+    "url": "https://www.tiktok.com/discover/mac-minu-agent-bot",
+    "content": "... cases, Clawed Bot features, integrate AI in daily life, how to use ... Andrej Karpathy called it \"a complete mess of a computer security nightmare ..."
+  },
+  {
+    "title": "How to Use Clawdbot Effectively - TikTok",
+    "url": "https://www.tiktok.com/discover/how-to-use-clawdbot-effectively",
+    "content": "4 日前 — First AI assistant you can run locally or on a VPS. Most people set it up wrong. These 3 security moves stop 90 percent of real attacks."
+  },
+  {
+    "title": "OpenClaw security: Risks, best practices, and a checklist",
+    "url": "https://www.hostinger.com/tutorials/openclaw-security",
+    "content": "Learn OpenClaw security risks and how to secure a self-hosted setup on a VPS with safer ports, firewall rules, isolation, secrets handling, and approvals."
+  },
+  {
+    "title": "Security - OpenClaw",
+    "url": "https://docs.openclaw.ai/gateway/security",
+    "content": "Most failures here are not fancy exploits — they’re “someone messaged the bot and the bot did what they asked.” OpenClaw’s stance: Identity first: decide who can talk to the bot (DM pairing / allowlists / explicit “open”). Scope next: decide where the bot is allowed to act (group allowlists + mention gating, tools, sandboxing, device permissions). Model last: assume the model can be manipulated; design so manipulation has limited blast radius."
+  },
+  {
+    "title": "emudao",
+    "url": "https://x.com/emudao",
+    "content": "如果你Openclaw 安装了，但是不好用，可能你没安装下面三个Skill 技能！ 1，tavily-search 联网技能。不联网跟瞎子一样！先开眼看世界。 ... 2，find-skills 主动找技能解决问题。"
+  },
+  {
+    "title": "OpenClaw 保姆级教程（中）新手必装 5 个稳定设置，照着做，少踩 90% 的坑（附配置文件&教程）",
+    "url": "https://zhuanlan.zhihu.com/p/2002387789141005766",
+    "content": "如果你看完我上一篇《OpenClaw跑了120小时，踩了无数坑总结出的5条必做》一定能感同身受! 它十分强大，思考规划、脏活累活全帮你干它脾气很差，一言不合就崩，无数小坑搞的你心力憔悴它是\"吞金兽\"，一个不小心…"
+  },
+  {
+    "title": "OpenClaw安全警示：你必须知道的5大风险 · 比邻",
+    "url": "https://eastondev.com/blog/zh/posts/ai/20260204-openclaw-security-risks/",
+    "content": "OpenClaw存在远程代码执行漏洞(CVE-2026-25253)、API密钥泄露、Prompt注入攻击等严重安全问题，ClawHub上12%的Skills为恶意软件。本文详解5大风险及实用防护建议。"
+  },
+  {
+    "title": "GitHub - hesamsheikh/awesome-openclaw-usecases: A community collection of OpenClaw use cases for making life easier.",
+    "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+    "content": "Warning: OpenClaw skills may have critical security vulnerabilities."
+  }
+]

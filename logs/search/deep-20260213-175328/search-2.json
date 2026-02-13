@@ -1,0 +1,32 @@
+[
+  {
+    "title": "OpenClaw + 企业微信：打造你的24小时AI办公助理 - 腾讯云",
+    "url": "https://cloud.tencent.com/developer/article/2628513",
+    "content": "7天前 — ... 最佳实践与总结### 安全建议1. **命令白名单**：限制OpenClaw 可执行的命令2. **敏感数据加密**：使用环境变量存储API Key 3. **操作确认**：危险操作 ..."
+  },
+  {
+    "title": "开发者欢呼，普通人迷茫：OpenClaw之后，“可用AI”的路该怎么走？",
+    "url": "https://www.cnblogs.com/OBCE666/p/19604721",
+    "content": "2天前 ... 以#OpenClaw（原Clawdbot）为代表的智能助手，成为了这一趋势的绝佳注脚。它的爆火并非源于底层模型的颠覆性突破，而在于其精准的产品定位——它重构了开发工作 ..."
+  },
+  {
+    "title": "OpenClaw 完全部署指南：从入门到安全加固 - 知乎",
+    "url": "https://zhuanlan.zhihu.com/p/2004187601276540473",
+    "content": "OpenClaw 是 2026 年初爆火的开源个人 AI 助手项目（GitHub 两周突破 15 万 Star），它能在你自己的设备上运行，并接入 WhatsApp、Telegram、飞书、钉钉等十余种消息平台，充当 7×24 小时的全能 AI Agent。 本文综合 20 余篇中英文技术资料，从部署、成本、安全三个维度对 OpenClaw 做了系统性梳理。 以下是核心要点速览： 本文覆盖了 11 种部署路径，可归纳为四大类： 本地一键安装 （curl | bash 或 npm install -g openclaw）：5 分钟上手，零基础设施成本，适合个人体验。"
+  },
+  {
+    "title": "OpenClaw 云端部署vs 本地部署：5 大维度完全对比指南 - APIYI",
+    "url": "https://help.apiyi.com/openclaw-cloud-vs-local-deployment-guide.html",
+    "content": "2026年2月1日 ... 核心价值: 看完本文，你将明确在不同使用场景下该选择哪种OpenClaw 部署方案，避免踩坑。 ... OpenClaw 安全分析: 安全风险和最佳实践. 链接: venturebeat.com ..."
+  },
+  {
+    "title": "MR.JC区块博士🔶 BNB ｜MemeMax⚡️ ｜🌊RIVER (@blockphd7) on ...",
+    "url": "https://x.com/blockphd7/status/2017848143690563966",
+    "content": "2026年2月1日 ... 对于普通用户，建议等待更成熟的版本或选择更安全的替代方案。技术专家如果决定尝试，务必充分理解风险，严格遵循安全最佳实践，不要在生产环境或处理敏感数据 ..."
+  },
+  {
+    "title": "OpenClaw安全加固实战指南：从基础配置到安全风险运营 ...",
+    "url": "https://cloud.tencent.com/developer/article/2627780",
+    "content": "OpenClaw服务器暴露公网存在重大安全隐患，本文提供腾讯云环境下的安全加固方案。 核心措施包括：限制默认端口访问、修改SSH端口、降权运行服务、禁用root远程登录、定期备份数据等。"
+  }
+]

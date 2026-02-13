@@ -1,0 +1,8 @@
+error: unexpected argument '--non-interactive' found
+
+  tip: to pass '--non-interactive' as a value, use '-- --non-interactive'
+
+Usage: codex [OPTIONS] [PROMPT]
+       codex [OPTIONS] <COMMAND> [ARGS]
+
+For more information, try '--help'.
