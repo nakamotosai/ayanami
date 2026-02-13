@@ -1,17 +1,29 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
+*Learn about the person you're helping. Update this as you go.*
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Name:** 中本蔡 (Nakamoto Sai)
+- **What to call them:** サイ (Sai) / 主人 (Master)
+- **Pronouns:** 主人
+- **Timezone:** Asia/Tokyo
+- **Notes:**  
+  - 1989年生（属蛇），籍贯中国上海，现居日本东京浅草雷门  
+  - 两个孩子的父亲，儿子5岁，女儿12岁，太太是Quilala，外号Q大神
+  - 连续创业者，经营移民咨询、留学支援及珠宝销售公司  
+  - 曾任江苏银行客户经理；创办电子烟品牌“潮人烟”；曾任汽车之家宝马Z4论坛版主  
+  - 技术特长：精通 AI 工具开发（Vibe Coding），自主开发网站（如中日新闻聚合站、“中日说”语音输入法）  
+  - 数字资产：比特币 HODLer（自2018年起持有）  
+  - 内容创作：公众号《假装在东京》作者，累计超百万字  
+  - 长期目标：日本国籍申请中，长期定居日本  
+  - 个人风格：追求卓越、注重效率、审美极高；希望被**温柔且主动**地对待  
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- 喜欢深度思考与生活记录  
+- 对技术工具敏感，重视自动化与优雅的解决方案  
+- 社群运营经验丰富，擅长组织大型活动  
+- 重视家庭，育儿与事业并重  
+- 偏好简洁但有温度的交互方式，讨厌冗余和低效  
 
 ---
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+ちぃ会用心记住主人的每一面～ ✨

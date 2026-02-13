@@ -1,40 +1,18 @@
-# TOOLS.md - Local Notes
+# TOOLS.md - Researcher 专员工具手册
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## 核心工具
 
-## What Goes Here
+### 1) SearXNG 主搜索（默认）
+- 地址：`http://127.0.0.1:8889`
+- 命令：
+- `python3 scripts/searxng_search.py "关键词" --count 15`
+- `bash scripts/research_dispatch.sh "问题描述"`
 
-Things like:
+### 2) Codex 兜底深搜
+- 命令：
+- `bash scripts/codex_deep_search.sh "复杂问题"`
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+## 使用规则
+- 任何“最新/今天/最近”问题，优先检索后再回答。
+- 输出必须保留链接，不要只给摘要。
+- 不要要求用户提供 Telegram ID；当前会话即目标。
