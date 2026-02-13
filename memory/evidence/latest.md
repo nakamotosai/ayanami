@@ -1,11 +1,11 @@
 # Evidence Snapshot
 
-- ts_utc: 2026-02-13T20:42:02Z
+- ts_utc: 2026-02-13T20:42:19Z
 - workspace: /home/ubuntu/.openclaw/workspace
 
 ## Git
 - branch: main
-- head: 27d42ff
+- head: c50fe92
 - dirty: 1 files
 
 ### Changed Files (tracked diff)
@@ -23,12 +23,12 @@ Documents
   Total:    28 files indexed
   Vectors:  0 embedded
   Pending:  24 need embedding (run 'qmd embed')
-  Updated:  44s ago
+  Updated:  1m ago
 
 Collections
   daily-logs (qmd://daily-logs/)
     Pattern:  **/*.md
-    Files:    17 (updated 44s ago)
+    Files:    17 (updated 1m ago)
   workspace (qmd://workspace/)
     Pattern:  *.md
     Files:    7 (updated 3h ago)
