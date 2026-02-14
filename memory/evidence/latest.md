@@ -1,11 +1,11 @@
 # Evidence Snapshot
 
-- ts_utc: 2026-02-14T01:11:31Z
+- ts_utc: 2026-02-14T02:03:26Z
 - workspace: /home/ubuntu/.openclaw/workspace
 
 ## Git
 - branch: main
-- head: c1594c7
+- head: 4a88a88
 - dirty: 1 files
 
 ### Changed Files (tracked diff)
@@ -23,18 +23,18 @@ Documents
   Total:    28 files indexed
   Vectors:  0 embedded
   Pending:  24 need embedding (run 'qmd embed')
-  Updated:  29m ago
+  Updated:  51m ago
 
 Collections
   daily-logs (qmd://daily-logs/)
     Pattern:  **/*.md
-    Files:    17 (updated 29m ago)
+    Files:    17 (updated 51m ago)
   workspace (qmd://workspace/)
     Pattern:  *.md
-    Files:    7 (updated 7h ago)
+    Files:    7 (updated 8h ago)
   memory (qmd://memory/)
     Pattern:  *.md
-    Files:    4 (updated 2h ago)
+    Files:    4 (updated 3h ago)
 
 Examples
   # List files in a collection
@@ -46,9 +46,9 @@ Examples
 
 ## MCP (mcporter)
 mcporter 0.7.3 — Listing 5 server(s) (per-server timeout: 30s)
-- fetch (1 tool, 0.1s)
-- tasks (2 tools, 0.1s)
 - github (1 tool, 0.1s)
+- tasks (2 tools, 0.1s)
+- fetch (1 tool, 0.1s)
 - searxng (1 tool, 0.2s)
 - qmd (6 tools, 0.5s)
 ✔ Listed 5 servers (5 healthy).
