@@ -1,0 +1,14 @@
+{"type":"thread.started","thread_id":"019c5cab-98c3-7fc0-9b52-cddff1b08472"}
+{"type":"turn.started"}
+2026-02-14T15:01:15.612738Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5c79-e260-7160-bb50-56440e99a75e
+2026-02-14T15:01:15.634942Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5c77-36ce-7062-be5f-d0bf3bd3fa7f
+2026-02-14T15:01:15.656791Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c4def-afe6-74b3-9aa2-c6add21083e3
+2026-02-14T15:01:15.677804Z ERROR codex_core::rollout::list: state db missing rollout path for thread 019c5ca8-bc90-7c92-8011-2cfeca2df389
+{"type":"error","message":"Reconnecting... 1/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"}
+{"type":"error","message":"Reconnecting... 2/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"}
+{"type":"error","message":"Reconnecting... 3/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"}
+{"type":"error","message":"Reconnecting... 4/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"}
+{"type":"error","message":"Reconnecting... 5/5 (stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses))"}
+{"type":"error","message":"stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)"}
+{"type":"turn.failed","error":{"message":"stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)"}}
+Warning: no last agent message; wrote empty content to /home/ubuntu/.openclaw/workspace/logs/codex/last-20260214-150115.md

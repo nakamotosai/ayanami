@@ -1,0 +1,32 @@
+[
+  {
+    "title": "美股1055 Polymarket 再论 - 知乎专栏",
+    "url": "https://zhuanlan.zhihu.com/p/1968967384099459215",
+    "content": "2025年11月4日 ... 对比套利/价差耕作(Arbitrage/Spread Farming)：YES+NO不等于1？直接两边 ... 最稳：套利/对冲，风险<5%，年化10-20%。像民主党养胖子，吃小利不 ..."
+  },
+  {
+    "title": "用于自动进行Kalshi和Polymarket之间的“无风险”套利。以下是源代码。",
+    "url": "https://www.reddit.com/r/algotrading/comments/1qebxud/i_built_a_bot_to_automate_riskfree_arbitrage/?tl=zh-hans",
+    "content": "2026年1月17日 ... 策略很简单：合成套利。当Kalshi和Polymarket对某个事件（例如美联储降息）的隐含概率出现分歧时，我的机器人会自动买入Kalshi的“是”和Polymarket的“否”。"
+  },
+  {
+    "title": "Polymarket 量化交易实战（八）：双向套利策略详解",
+    "url": "https://zhuanlan.zhihu.com/p/2005222115322905400",
+    "content": "逻辑解析： 如果不平衡（只有 Yes），限制仓位，防止单边投机。 如果平衡（Yes/No 都有），说明我们持有的是无风险的合成资产（Synthetic Cash），这时候可以放宽限制。 4. 额外收益：Maker Rebates 除了 Spread 收益，Polymarket 还有一个官方的 Maker Rebates Program （做市商返点计划）。 机制： 在 15 分钟 Crypto ..."
+  },
+  {
+    "title": "Polymarket的几种套利机会 - 知乎",
+    "url": "https://zhuanlan.zhihu.com/p/1969820147800839972",
+    "content": "市场内再平衡套利：被积极利用，且策略偏好明显。 利润： 买入YES： $11,092,286 买入NO： $17,307,114 （最赚钱的策略） 卖出YES： $612,188 卖出NO： $4,264 关键发现： “买入NO”是主导策略。这证实了Polymarket官方曾在推特上指出的现象——有账户通过大量买入“NO”位置获利。 政治类市场占据了被实现利润的绝大部分，尤其是在11月大选期间以及8月拜登退选等重大事件节点。 体育类市场虽然存在大量套利机会（第六部分发现），但被实际提取的利润却很少，这可能是一个尚未被充分开发的领域。 C."
+  },
+  {
+    "title": "Polymarket做市商入门指南：API与盈利策略全解析 - UniFuncs",
+    "url": "https://unifuncs.com/s/VrbdyRd8",
+    "content": "2026年1月13日 ... 深度解析如何成为Polymarket做市商，包括完整的API技术实现、六大核心盈利策略、风险管理与实战流程。从Python/TypeScript代码实现到开源项目参考， ..."
+  },
+  {
+    "title": "如何通过Polymarket套利实现年化40%收益？ - BlockBeats",
+    "url": "https://www.theblockbeats.info/news/60485",
+    "content": "本文作者以实盘展示套利结构，为当下愈发激烈的预测市场套利竞争提供一个清晰的参考。 以下为原文： 大约一个月前，我在 Polymarket.com 上注意到一些套利机会。 不过，该平台的流动性不足以让我进一步扩大仓位，因此我正打算回到股票交易。 但话说回来，我目前仍有大约 6 万美元投入在 Polymarket 的各类市场中。 这些交易大多会在大选结束后到期，届时我会统一平仓。 下面我将逐一介绍这些仓位，并附上一些免费代码，供有兴趣探索这一市场的人参考。 这个策略相当直接：一边押注卡玛拉·哈里斯赢得总统大选，一边买入共和党在选举人团中所有可能的胜选差距。 实质上，这两类头寸彼此对冲。 如果两边头寸的总价格低于 1，那么差值部分就是可以锁定的收益率——也就是套利空间。"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "generatedAtUtc": "2026-02-14T14:39:07Z",
+  "agentsCalled": 3,
+  "decision": "pass",
+  "voteCounts": {
+    "approve": 3,
+    "reject": 0,
+    "need_confirm": 0
+  },
+  "records": [
+    {
+      "agent": "magi-balthasar",
+      "label": "Balthasar",
+      "vote": "approve",
+      "text": "已收到。"
+    },
+    {
+      "agent": "magi-melchior",
+      "label": "Melchior",
+      "vote": "approve",
+      "text": "收到，正在测试连接。"
+    },
+    {
+      "agent": "magi-casper",
+      "label": "Casper",
+      "vote": "approve",
+      "text": "收到，仅一句。"
+    }
+  ]
+}

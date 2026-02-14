@@ -3,6 +3,8 @@
 目标：Telegram 主渠道下，做到“有事主动、没事不扰”。
 
 ## 0) 私聊记忆自动落盘（每次 heartbeat 必做）
+- 先检查是否有 Codex 后台任务完成需要回传：`bash ~/.openclaw/workspace/scripts/codex_job_notifier.sh`
+
 - `python3 ~/.openclaw/workspace/skills/telegram-memory-autostore/scripts/capture_and_store.py`
 
 ## 1) Moltbook 巡查与参与（每次 heartbeat 只做轻量）

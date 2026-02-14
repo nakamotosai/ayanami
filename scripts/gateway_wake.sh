@@ -27,7 +27,7 @@ if [[ -z "$TOKEN" ]]; then
   exit 1
 fi
 
-curl -sS -X POST "http://127.0.0.1:${PORT}/api/cron/wake" \
+curl -sS --fail --max-time 2 -X POST "http://127.0.0.1:${PORT}/api/cron/wake" \
   -H "Authorization: Bearer ${TOKEN}" \
   -H "Content-Type: application/json" \
   -d "{\"reason\":\"${REASON}\"}" \

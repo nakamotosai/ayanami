@@ -3,6 +3,8 @@
 ## 三个最基本能力（Casper 必须会用）
 
 ### 1) 调用 VPS 上的 Codex CLI（本机执行）
+- 后台（推荐，避免卡住 Telegram）：`CODEX_TIMEOUT=300 bash scripts/codex_dispatch.sh "任务" 8138445887`
+  - 结果会自动回传；也可手动跑：`bash scripts/codex_job_notifier.sh`
 - 检查：`codex --version`
 - 用途：需要在 VPS 上直接跑命令、脚本、代码改动时。
 - 原则：先只读检查（例如 `ls`/`rg`/`cat`），再做写入；不可逆操作先确认。
@@ -42,7 +44,6 @@
 - QMD 完全在本地运行，不需要外部 API key，直接操作 qmd search/query 即可；如果遇到认证错误，多半是由于初始配置未同步。
 - 示例：`qmd search "关键词" -c memory -n 10 --json`
 - 示例：`qmd query "我之前对X的偏好是什么" -c memory -n 10 --json`
-- ⚠️ 记忆检索请优先使用 qmd 系列命令，它们不依赖外部认证；`memory_search` 目前因 API key 缺失而无法正常使用，仅在系统明确要求或你自行配置好凭据后再调用。
 
 ## MCP（mcporter）已接通：SearXNG + QMD
 
@@ -135,3 +136,14 @@
   - 简易搜索：`bash skills/search-suite/scripts/fast_search.sh "query"`
   - 强力搜索：`bash skills/search-suite/scripts/deep_search.sh "topic" "q1" "q2" "q3"`
   - 输出：`memory/research/`
+
+## learning-loop（强力学习模式）
+- 开始/继续：`bash skills/learning-loop/scripts/learn_start.sh "topic"`
+- 定稿：`bash skills/learning-loop/scripts/learn_publish.sh "topic"`
+- 停止：`bash skills/learning-loop/scripts/learn_stop.sh "topic"`
+
+## MAGI 三分身（决策）
+- 强制统一入口：`bash scripts/magi_vote.sh "<决策包>"`
+- 成功标志：输出包含 `MAGI_VOTE_OK` 和 `agents_called=3`
+- 结果文件：`logs/magi/latest.md`、`logs/magi/latest.json`
+- 若 `agents_called != 3`：视为调度失败，不允许输出“已完成投票”结论。

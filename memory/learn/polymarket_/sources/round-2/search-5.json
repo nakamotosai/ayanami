@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Prediction markets are having a moment. | by Nick Ruzicka",
+    "url": "https://medium.com/@nick.c.ruzicka/prediction-markets-are-having-a-moment-9b0924507ad3",
+    "content": "Polymarket burned through roughly $10 million on market maker incentives, at one point paying out over $50,000 per day to keep their orderbooks ..."
+  },
+  {
+    "title": "Trading Fees - Polymarket Documentation",
+    "url": "https://docs.polymarket.com/polymarket-learn/trading/fees",
+    "content": "The following market types charge a small taker fee on each trade. These fees are collected and redistributed daily to market makers as rebates, incentivizing deeper liquidity and tighter spreads."
+  },
+  {
+    "title": "Polymarket's Taker Fee Model and Its Implications for Liquidity and ...",
+    "url": "https://www.ainvest.com/news/polymarket-taker-fee-model-implications-liquidity-trading-dynamics-2601/",
+    "content": "Jan 6, 2026 — Polymarket's taker fee model exemplifies how targeted fee structures can transform market dynamics. By redistributing trading costs to liquidity ..."
+  },
+  {
+    "title": "Fee Schedule - Polymarket US Documentation",
+    "url": "https://docs.polymarket.us/polymarket-learn/trading/prices-and-fees/trading-fees",
+    "content": "Overview of Polymarket US trading fees and how they apply Polymarket US keeps trading fees extremely low. Fees apply differently depending on whether your order executes immediately or posts to the book. Takers pay a 0.10 percent fee (10 basis points) for trades that execute immediately Makers pay no fees when their order does not fill immediately"
+  },
+  {
+    "title": "Highlights and Hidden Worries: Five Bottlenecks Predicting Market ...",
+    "url": "https://www.binance.com/en-IN/square/post/32470456686761",
+    "content": "Nov 16, 2025 — Cross-market reward tiers incentivize market makers to provide liquidity across multiple markets, thus spreading risk and improving the ..."
+  },
+  {
+    "title": "Polymarket's Strategic Fee Model and Its Implications for Market ...",
+    "url": "https://www.ainvest.com/news/polymarket-strategic-fee-model-implications-market-quality-liquidity-2601/",
+    "content": "In the rapidly evolving landscape of prediction markets, Polymarket has emerged as a trailblazer, leveraging a nuanced fee structure to balance liquidity incentives with market quality. As the platform transitions from a volume-driven model to one prioritizing infrastructure maturity and sustainable growth, its dynamic taker-fee model and Maker Rebates Program are reshaping how liquidity is ..."
+  }
+]

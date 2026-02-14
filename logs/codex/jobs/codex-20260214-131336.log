@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+IndexError: list index out of range
+/home/ubuntu/.openclaw/workspace/scripts/telegram_send.sh: line 35: [Codex 完成] codex-20260214-131336\n\n1+1等于2\n\n(文件: /home/ubuntu/.openclaw/workspace/logs/codex/last-20260214-131337.md): No such file or directory

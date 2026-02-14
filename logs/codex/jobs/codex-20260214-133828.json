@@ -1,0 +1,9 @@
+{
+  "jobId": "codex-20260214-133828",
+  "createdAtUtc": "2026-02-14T13:38:28Z",
+  "status": "failed",
+  "chatId": "8138445887",
+  "notified": false,
+  "failedAtUtc": "2026-02-14T13:55:28Z",
+  "failReason": "stale_running_no_pid"
+}

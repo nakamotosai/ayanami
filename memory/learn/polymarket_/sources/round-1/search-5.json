@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Polymarket's Taker Fee Model and Its Implications for Liquidity and Trading Dynamics",
+    "url": "https://www.ainvest.com/news/polymarket-taker-fee-model-implications-liquidity-trading-dynamics-2601/",
+    "content": "These fees are redistributed daily to liquidity providers via the Maker Rebates Program, creating a self-sustaining cycle that rewards market makers for maintaining depth and tight spreads."
+  },
+  {
+    "title": "Polymarket's Strategic Fee Model and Its Implications for Market Quality and Liquidity",
+    "url": "https://www.ainvest.com/news/polymarket-strategic-fee-model-implications-market-quality-liquidity-2601/",
+    "content": "In the rapidly evolving landscape of prediction markets, Polymarket has emerged as a trailblazer, leveraging a nuanced fee structure to balance liquidity incentives with market quality. As the platform transitions from a volume-driven model to one prioritizing infrastructure maturity and sustainable growth, its dynamic taker-fee model and Maker Rebates Program are reshaping how liquidity is ..."
+  },
+  {
+    "title": "Polymarket Fees Explained: Trading, Winnings, and Withdrawals",
+    "url": "https://cryptonews.com/cryptocurrency/polymarket-fees/",
+    "content": "For example, short-term crypto markets move fast and attract bots, so taker fees help manage liquidity and reduce abuse. Yes. Polymarket reserves the right to change its fee structure based on market conditions, especially in short-term markets. Changes are usually targeted, not platform-wide. For most users, yes. Poymarket does offer lower costs unless you are trading short-term crypto markets aggressively. ... Disclaimer: Crypto is a high-risk asset class."
+  },
+  {
+    "title": "Understanding the Polymarket Fee Curve & Building a Dual-Loop Trading Architecture",
+    "url": "https://quantjourney.substack.com/p/understanding-the-polymarket-fee",
+    "content": "If you're building a trading bot for Polymarket (or any prediction market), as we do, there's one thing that will invalidate your strategy faster than bad signals: misunderstanding your cost structure. Most markets on Polymarket are fee-free; taker fees are enabled only on selected markets (e.g. 15-minute crypto markets)."
+  },
+  {
+    "title": "POLYMARKET US RULEBOOK",
+    "url": "https://polymarketexchange.com/files/legal/Polymarket%20US%20Rulebook%20(2025.12.30).pdf",
+    "content": "Dec 30, 2025 — A Market Maker is obligated to perform all requirements and obligations delineated in the relevant Market Maker agreement and Market Maker ...70 pages·501 KB"
+  },
+  {
+    "title": "Reverse Engineering Polymarket Liquidity Rewards | by PolyMaster | Jan, 2026 | Medium",
+    "url": "https://medium.com/@wanguolin/my-two-week-deep-dive-into-polymarket-liquidity-rewards-a-technical-postmortem-88d3a954a058",
+    "content": "Rewards are not paid linearly based on whether you provide liquidity or how much size you post. Instead, Polymarket uses a quadratic spread function to heavily penalize quotes that sit away from the adjusted midpoint."
+  }
+]
