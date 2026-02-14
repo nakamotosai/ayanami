@@ -1,18 +1,15 @@
 # Evidence Snapshot
 
-- ts_utc: 2026-02-14T00:10:43Z
+- ts_utc: 2026-02-14T00:31:38Z
 - workspace: /home/ubuntu/.openclaw/workspace
 
 ## Git
 - branch: main
-- head: 041782d
-- dirty: 4 files
+- head: 8fb76a6
+- dirty: 1 files
 
 ### Changed Files (tracked diff)
 memory/evidence/latest.md
-memory/raw/telegram/telegram_8138445887/2026-02-14.jsonl
-memory/state/evolve_hourly.json
-memory/state/telegram_direct_448618e0-582b-4367-b605-ec39374498bc.json
 
 ### Untracked (top 50)
 
@@ -26,15 +23,15 @@ Documents
   Total:    28 files indexed
   Vectors:  0 embedded
   Pending:  24 need embedding (run 'qmd embed')
-  Updated:  9m ago
+  Updated:  20m ago
 
 Collections
   daily-logs (qmd://daily-logs/)
     Pattern:  **/*.md
-    Files:    17 (updated 9m ago)
+    Files:    17 (updated 20m ago)
   workspace (qmd://workspace/)
     Pattern:  *.md
-    Files:    7 (updated 6h ago)
+    Files:    7 (updated 7h ago)
   memory (qmd://memory/)
     Pattern:  *.md
     Files:    4 (updated 1h ago)
@@ -49,8 +46,8 @@ Examples
 
 ## MCP (mcporter)
 mcporter 0.7.3 — Listing 5 server(s) (per-server timeout: 30s)
-- fetch (1 tool, 0.1s)
 - github (1 tool, 0.1s)
+- fetch (1 tool, 0.1s)
 - tasks (2 tools, 0.1s)
 - searxng (1 tool, 0.2s)
 - qmd (6 tools, 0.6s)
