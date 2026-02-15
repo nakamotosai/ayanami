@@ -1,20 +1,18 @@
 # Evidence Snapshot
 
-- ts_utc: 2026-02-15T06:01:17Z
+- ts_utc: 2026-02-15T09:31:26Z
 - workspace: /home/ubuntu/.openclaw/workspace
 
 ## Git
 - branch: main
-- head: be67563
-- dirty: 75 files
+- head: 319fac8
+- dirty: 144 files
 
 ### Changed Files (tracked diff)
-logs/codex/events-20260215-044001.jsonl
-logs/codex/jobs/codex-20260215-044001.json
-logs/codex/jobs/codex-20260215-044001.log
+logs/codex/events-20260215-061001.jsonl
+logs/codex/jobs/codex-20260215-061001.json
+logs/codex/jobs/codex-20260215-061001.log
 logs/codex/jobs/latest.json
-logs/magi/latest.json
-logs/magi/latest.md
 memory/2026-02-15.md
 memory/evidence/latest.md
 memory/learn/polymarket_/kb.md
@@ -23,82 +21,82 @@ memory/learn/polymarket_/sources.md
 memory/learn/polymarket_/state.json
 memory/raw/telegram/telegram_8138445887/2026-02-15.jsonl
 memory/state/evolve_hourly.json
-memory/state/telegram_direct_8f9d1011-decb-4e6f-85f6-115d63c1e038.json
+skills/news-briefing/scripts/fetch_news.py
 
 ### Untracked (top 50)
-logs/codex/events-20260215-045001.jsonl
-logs/codex/events-20260215-045039.jsonl
-logs/codex/events-20260215-045557.jsonl
-logs/codex/events-20260215-050001.jsonl
-logs/codex/events-20260215-051002.jsonl
-logs/codex/events-20260215-052001.jsonl
-logs/codex/events-20260215-053001.jsonl
-logs/codex/events-20260215-054002.jsonl
-logs/codex/events-20260215-055001.jsonl
-logs/codex/events-20260215-060002.jsonl
-logs/codex/jobs/codex-20260215-045001.json
-logs/codex/jobs/codex-20260215-045001.log
-logs/codex/jobs/codex-20260215-045001.sh
-logs/codex/jobs/codex-20260215-045039.json
-logs/codex/jobs/codex-20260215-045039.log
-logs/codex/jobs/codex-20260215-045039.sh
-logs/codex/jobs/codex-20260215-045557.json
-logs/codex/jobs/codex-20260215-045557.log
-logs/codex/jobs/codex-20260215-045557.sh
-logs/codex/jobs/codex-20260215-050001.json
-logs/codex/jobs/codex-20260215-050001.log
-logs/codex/jobs/codex-20260215-050001.sh
-logs/codex/jobs/codex-20260215-051002.json
-logs/codex/jobs/codex-20260215-051002.log
-logs/codex/jobs/codex-20260215-051002.sh
-logs/codex/jobs/codex-20260215-052001.json
-logs/codex/jobs/codex-20260215-052001.log
-logs/codex/jobs/codex-20260215-052001.sh
-logs/codex/jobs/codex-20260215-053001.json
-logs/codex/jobs/codex-20260215-053001.log
-logs/codex/jobs/codex-20260215-053001.sh
-logs/codex/jobs/codex-20260215-054001.json
-logs/codex/jobs/codex-20260215-054001.log
-logs/codex/jobs/codex-20260215-054001.sh
-logs/codex/jobs/codex-20260215-055001.json
-logs/codex/jobs/codex-20260215-055001.log
-logs/codex/jobs/codex-20260215-055001.sh
-logs/codex/jobs/codex-20260215-060002.json
-logs/codex/jobs/codex-20260215-060002.log
-logs/codex/jobs/codex-20260215-060002.sh
-logs/codex/last-20260215-044001.md
-logs/codex/last-20260215-045001.md
-logs/codex/last-20260215-045557.md
-logs/codex/last-20260215-050001.md
-logs/codex/last-20260215-051002.md
-logs/codex/last-20260215-052001.md
-logs/codex/last-20260215-053001.md
-logs/codex/last-20260215-054002.md
-logs/codex/last-20260215-055001.md
-logs/codex/last-20260215-060002.md
+.venv/bin/Activate.ps1
+.venv/bin/activate
+.venv/bin/activate.csh
+.venv/bin/activate.fish
+.venv/bin/normalizer
+.venv/bin/pip
+.venv/bin/pip3
+.venv/bin/pip3.12
+.venv/bin/python
+.venv/bin/python3
+.venv/bin/python3.12
+.venv/lib/python3.12/site-packages/__pycache__/six.cpython-312.pyc
+.venv/lib/python3.12/site-packages/__pycache__/typing_extensions.cpython-312.pyc
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/INSTALLER
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/METADATA
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/RECORD
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/REQUESTED
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/WHEEL
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/licenses/AUTHORS
+.venv/lib/python3.12/site-packages/beautifulsoup4-4.14.3.dist-info/licenses/LICENSE
+.venv/lib/python3.12/site-packages/bs4/__init__.py
+.venv/lib/python3.12/site-packages/bs4/__pycache__/__init__.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/_deprecation.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/_typing.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/_warnings.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/css.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/dammit.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/diagnose.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/element.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/exceptions.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/filter.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/__pycache__/formatter.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/_deprecation.py
+.venv/lib/python3.12/site-packages/bs4/_typing.py
+.venv/lib/python3.12/site-packages/bs4/_warnings.py
+.venv/lib/python3.12/site-packages/bs4/builder/__init__.py
+.venv/lib/python3.12/site-packages/bs4/builder/__pycache__/__init__.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/builder/__pycache__/_html5lib.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/builder/__pycache__/_htmlparser.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/builder/__pycache__/_lxml.cpython-312.pyc
+.venv/lib/python3.12/site-packages/bs4/builder/_html5lib.py
+.venv/lib/python3.12/site-packages/bs4/builder/_htmlparser.py
+.venv/lib/python3.12/site-packages/bs4/builder/_lxml.py
+.venv/lib/python3.12/site-packages/bs4/css.py
+.venv/lib/python3.12/site-packages/bs4/dammit.py
+.venv/lib/python3.12/site-packages/bs4/diagnose.py
+.venv/lib/python3.12/site-packages/bs4/element.py
+.venv/lib/python3.12/site-packages/bs4/exceptions.py
+.venv/lib/python3.12/site-packages/bs4/filter.py
+.venv/lib/python3.12/site-packages/bs4/formatter.py
 
 ## QMD
 QMD Status
 
 Index: /home/ubuntu/.cache/qmd/index.sqlite
-Size:  2.8 MB
+Size:  3.4 MB
 
 Documents
   Total:    36 files indexed
   Vectors:  0 embedded
   Pending:  30 need embedding (run 'qmd embed')
-  Updated:  21m ago
+  Updated:  20m ago
 
 Collections
   daily-logs (qmd://daily-logs/)
     Pattern:  **/*.md
-    Files:    23 (updated 21m ago)
+    Files:    23 (updated 20m ago)
   workspace (qmd://workspace/)
     Pattern:  *.md
-    Files:    7 (updated 3h ago)
+    Files:    7 (updated 7h ago)
   memory (qmd://memory/)
     Pattern:  *.md
-    Files:    6 (updated 49m ago)
+    Files:    6 (updated 50m ago)
 
 Examples
   # List files in a collection
@@ -112,23 +110,23 @@ Examples
 - mcporter: not installed
 
 ## Recent Logs (top 20)
-2026-02-15T14:01:17.1703778340Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-060002.md
-2026-02-15T14:01:17.1703778340Z /home/ubuntu/.openclaw/workspace/logs/codex/events-20260215-060002.jsonl
-2026-02-15T14:00:02.1024533520Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-060002.json
-2026-02-15T14:00:02.0830153780Z /home/ubuntu/.openclaw/workspace/logs/codex/.codex.lock
-2026-02-15T14:00:02.0760153440Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-060002.log
-2026-02-15T14:00:02.0755569820Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-060002.sh
-2026-02-15T14:00:02.0688316300Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/latest.json
-2026-02-15T14:00:01.8890144410Z /home/ubuntu/.openclaw/workspace/logs/moltbook-cron/20260215-060001Z/result.json
-2026-02-15T13:51:28.2861708560Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-055001.json
-2026-02-15T13:51:20.9774907240Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-055001.log
-2026-02-15T13:51:20.4684882470Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-055001.md
-2026-02-15T13:51:20.4684882470Z /home/ubuntu/.openclaw/workspace/logs/codex/events-20260215-055001.jsonl
-2026-02-15T13:50:01.3851029180Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-055001.sh
-2026-02-15T13:41:34.9523242000Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-054001.json
-2026-02-15T13:41:27.8005715290Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-054001.log
-2026-02-15T13:41:27.2925689880Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-054002.md
-2026-02-15T13:41:27.2925689880Z /home/ubuntu/.openclaw/workspace/logs/codex/events-20260215-054002.jsonl
-2026-02-15T13:40:02.0285279720Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-054001.sh
-2026-02-15T13:31:35.6717228840Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-053001.json
-2026-02-15T13:31:28.6224710290Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-053001.log
+2026-02-15T17:31:26.9267494540Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-093001.md
+2026-02-15T17:31:26.9267494540Z /home/ubuntu/.openclaw/workspace/logs/codex/events-20260215-093001.jsonl
+2026-02-15T17:30:01.4618490070Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-093001.json
+2026-02-15T17:30:01.4453386480Z /home/ubuntu/.openclaw/workspace/logs/codex/.codex.lock
+2026-02-15T17:30:01.4323385850Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-093001.log
+2026-02-15T17:30:01.4303385760Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-093001.sh
+2026-02-15T17:30:01.4242605870Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/latest.json
+2026-02-15T17:21:35.3977705700Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-092002.json
+2026-02-15T17:21:26.8138673660Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-092002.log
+2026-02-15T17:21:26.2998648960Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-092002.md
+2026-02-15T17:21:26.2998648960Z /home/ubuntu/.openclaw/workspace/logs/codex/events-20260215-092002.jsonl
+2026-02-15T17:20:02.1324604130Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-092002.sh
+2026-02-15T17:11:28.7092550140Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-091001.json
+2026-02-15T17:11:20.1839473100Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-091001.log
+2026-02-15T17:11:19.6789448720Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-091001.md
+2026-02-15T17:11:19.6789448720Z /home/ubuntu/.openclaw/workspace/logs/codex/events-20260215-091001.jsonl
+2026-02-15T17:10:01.2435661090Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-091001.sh
+2026-02-15T17:01:25.7990899960Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-090001.json
+2026-02-15T17:01:17.3420207150Z /home/ubuntu/.openclaw/workspace/logs/codex/jobs/codex-20260215-090001.log
+2026-02-15T17:01:16.8360182370Z /home/ubuntu/.openclaw/workspace/logs/codex/last-20260215-090001.md

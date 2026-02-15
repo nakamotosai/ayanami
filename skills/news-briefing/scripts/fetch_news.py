@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import concurrent.futures
 import json
 import re
 import urllib.parse
@@ -111,29 +112,35 @@ def fetch_items(url: str, limit: int = 20):
     return out
 
 
-def collect(region: str):
+def collect(region: str, concurrency: int = 6):
     if region != "jp":
         raise ValueError("Only --region jp is supported currently")
 
+    concurrency = max(1, concurrency)
     bykey = defaultdict(list)
-    for feed_name, url in FEEDS_JP.items():
+
+    def fetch_feed(entry):
+        feed_name, url = entry
         try:
-            items = fetch_items(url)
+            return feed_name, fetch_items(url)
         except Exception:
-            continue
-        for idx, (title, link) in enumerate(items, start=1):
-            ntitle = norm_title(title)
-            key = keyify(ntitle)
-            score = WEIGHTS.get(feed_name, 1.0) * (1.0 / (0.6 + 0.15 * idx))
-            bykey[key].append(
-                {
-                    "score": score,
-                    "feed": feed_name,
-                    "rank": idx,
-                    "title": ntitle,
-                    "link": link,
-                }
-            )
+            return feed_name, []
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
+        for feed_name, items in executor.map(fetch_feed, FEEDS_JP.items()):
+            for idx, (title, link) in enumerate(items, start=1):
+                ntitle = norm_title(title)
+                key = keyify(ntitle)
+                score = WEIGHTS.get(feed_name, 1.0) * (1.0 / (0.6 + 0.15 * idx))
+                bykey[key].append(
+                    {
+                        "score": score,
+                        "feed": feed_name,
+                        "rank": idx,
+                        "title": ntitle,
+                        "link": link,
+                    }
+                )
 
     merged = []
     for k, vals in bykey.items():
@@ -183,9 +190,10 @@ def main():
     p.add_argument("--top", type=int, default=20)
     p.add_argument("--region", default="jp")
     p.add_argument("--format", choices=["json", "telegram"], default="json")
+    p.add_argument("--concurrency", type=int, default=6)
     args = p.parse_args()
 
-    merged = collect(args.region)[: args.top]
+    merged = collect(args.region, concurrency=args.concurrency)[: args.top]
 
     if args.format == "json":
         print(json.dumps(merged, ensure_ascii=False, indent=2))
